@@ -1,0 +1,52 @@
+.types {
+    align-items: center;
+    display: flex;
+    background-color: #f9b43b;
+    background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+}
+
+.types__content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.types__content-info {
+    position: relative;
+}
+
+.types__desc {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    min-width: 441px;
+}
+
+.types__price {
+    display: flex;
+    color: #e35028;
+    font-family: Gagalin;
+    font-weight: 400;
+    font-size: 72px;
+    padding: 8px 0;
+}
+
+.types__currency {
+    display: flex;
+    color: #e35028;
+    font-family: Gagalin;
+    font-weight: 400;
+    font-size: 30px;
+    padding: 8px;
+}
+
+.types__footer {
+    display: flex;
+    align-items: baseline;
+}
+
+.types__cost {
+    display: flex;
+    align-items: baseline;
+}

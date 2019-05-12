@@ -1,0 +1,61 @@
+.menu {
+    background: url(../img/menu-burgers.png) center center/cover no-repeat;
+    position: relative;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-content {
+    display: flex;
+}
+
+// .menu-content__active {
+//     display: flex;
+// }
+.menu-content__active-text {
+    width: 520px;
+    background-color: #2f3234;
+    color: #ffffff;
+    padding: 50px 30px;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    display: none;
+}
+
+.menu-content__img {
+    width: 80px;
+    position: relative;
+    cursor: pointer;
+    &--meat {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/contain no-repeat;
+    }
+    &--vegetarian {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/contain no-repeat;
+    }
+    &--dietary {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/contain no-repeat;
+    }
+    &:active+.menu-content__active-text {
+        display: block;
+        transition: 2s;
+    }
+}
+
+.menu-content__for {
+    transform: rotate(-90deg);
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 40px;
+    font-weight: 400;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 50px;
+    left: 0;
+    right: 0;
+    &:active {
+        color: #f9b43b;
+    }
+}

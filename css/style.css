@@ -1,0 +1,1441 @@
+@charset "UTF-8";
+/*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
+/* Document
+   ========================================================================== */
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+/* line 13, ../sass/_normalize.scss */
+html {
+  line-height: 1.15;
+  /* 1 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/* Sections
+     ========================================================================== */
+/**
+   * Remove the margin in all browsers.
+   */
+/* line 29, ../sass/_normalize.scss */
+body {
+  margin: 0;
+}
+
+/**
+   * Render the `main` element consistently in IE.
+   */
+/* line 38, ../sass/_normalize.scss */
+main {
+  display: block;
+}
+
+/**
+   * Correct the font size and margin on `h1` elements within `section` and
+   * `article` contexts in Chrome, Firefox, and Safari.
+   */
+/* line 48, ../sass/_normalize.scss */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/* Grouping content
+     ========================================================================== */
+/**
+   * 1. Add the correct box sizing in Firefox.
+   * 2. Show the overflow in Edge and IE.
+   */
+/* line 63, ../sass/_normalize.scss */
+hr {
+  box-sizing: content-box;
+  /* 1 */
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 78, ../sass/_normalize.scss */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/* Text-level semantics
+     ========================================================================== */
+/**
+   * Remove the gray background on active links in IE 10.
+   */
+/* line 94, ../sass/_normalize.scss */
+a {
+  background-color: transparent;
+}
+
+/**
+   * 1. Remove the bottom border in Chrome 57-
+   * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+   */
+/* line 104, ../sass/_normalize.scss */
+abbr[title] {
+  border-bottom: none;
+  /* 1 */
+  text-decoration: underline;
+  /* 2 */
+  text-decoration: underline dotted;
+  /* 2 */
+}
+
+/**
+   * Add the correct font weight in Chrome, Edge, and Safari.
+   */
+/* line 118, ../sass/_normalize.scss */
+b,
+strong {
+  font-weight: bolder;
+}
+
+/**
+   * 1. Correct the inheritance and scaling of font size in all browsers.
+   * 2. Correct the odd `em` font sizing in all browsers.
+   */
+/* line 129, ../sass/_normalize.scss */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */
+}
+
+/**
+   * Add the correct font size in all browsers.
+   */
+/* line 143, ../sass/_normalize.scss */
+small {
+  font-size: 80%;
+}
+
+/**
+   * Prevent `sub` and `sup` elements from affecting the line height in
+   * all browsers.
+   */
+/* line 153, ../sass/_normalize.scss */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+/* line 161, ../sass/_normalize.scss */
+sub {
+  bottom: -0.25em;
+}
+
+/* line 165, ../sass/_normalize.scss */
+sup {
+  top: -0.5em;
+}
+
+/* Embedded content
+     ========================================================================== */
+/**
+   * Remove the border on images inside links in IE 10.
+   */
+/* line 178, ../sass/_normalize.scss */
+img {
+  border-style: none;
+}
+
+/* Forms
+     ========================================================================== */
+/**
+   * 1. Change the font styles in all browsers.
+   * 2. Remove the margin in Firefox and Safari.
+   */
+/* line 192, ../sass/_normalize.scss */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit;
+  /* 1 */
+  font-size: 100%;
+  /* 1 */
+  line-height: 1.15;
+  /* 1 */
+  margin: 0;
+  /* 2 */
+}
+
+/**
+   * Show the overflow in IE.
+   * 1. Show the overflow in Edge.
+   */
+/* line 213, ../sass/_normalize.scss */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+/**
+   * Remove the inheritance of text transform in Edge, Firefox, and IE.
+   * 1. Remove the inheritance of text transform in Firefox.
+   */
+/* line 225, ../sass/_normalize.scss */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+   * Correct the inability to style clickable types in iOS and Safari.
+   */
+/* line 236, ../sass/_normalize.scss */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button;
+}
+
+/**
+   * Remove the inner border and padding in Firefox.
+   */
+/* line 248, ../sass/_normalize.scss */
+button::-moz-focus-inner,
+[type="button"]::-moz-focus-inner,
+[type="reset"]::-moz-focus-inner,
+[type="submit"]::-moz-focus-inner {
+  border-style: none;
+  padding: 0;
+}
+
+/**
+   * Restore the focus styles unset by the previous rule.
+   */
+/* line 261, ../sass/_normalize.scss */
+button:-moz-focusring,
+[type="button"]:-moz-focusring,
+[type="reset"]:-moz-focusring,
+[type="submit"]:-moz-focusring {
+  outline: 1px dotted ButtonText;
+}
+
+/**
+   * Correct the padding in Firefox.
+   */
+/* line 273, ../sass/_normalize.scss */
+fieldset {
+  padding: 0.35em 0.75em 0.625em;
+}
+
+/**
+   * 1. Correct the text wrapping in Edge and IE.
+   * 2. Correct the color inheritance from `fieldset` elements in IE.
+   * 3. Remove the padding so developers are not caught out when they zero out
+   *    `fieldset` elements in all browsers.
+   */
+/* line 285, ../sass/_normalize.scss */
+legend {
+  box-sizing: border-box;
+  /* 1 */
+  color: inherit;
+  /* 2 */
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  padding: 0;
+  /* 3 */
+  white-space: normal;
+  /* 1 */
+}
+
+/**
+   * Add the correct vertical alignment in Chrome, Firefox, and Opera.
+   */
+/* line 305, ../sass/_normalize.scss */
+progress {
+  vertical-align: baseline;
+}
+
+/**
+   * Remove the default vertical scrollbar in IE 10+.
+   */
+/* line 314, ../sass/_normalize.scss */
+textarea {
+  overflow: auto;
+}
+
+/**
+   * 1. Add the correct box sizing in IE 10.
+   * 2. Remove the padding in IE 10.
+   */
+/* line 324, ../sass/_normalize.scss */
+[type="checkbox"],
+[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+   * Correct the cursor style of increment and decrement buttons in Chrome.
+   */
+/* line 337, ../sass/_normalize.scss */
+[type="number"]::-webkit-inner-spin-button,
+[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+   * 1. Correct the odd appearance in Chrome and Safari.
+   * 2. Correct the outline style in Safari.
+   */
+/* line 348, ../sass/_normalize.scss */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */
+}
+
+/**
+   * Remove the inner padding in Chrome and Safari on macOS.
+   */
+/* line 360, ../sass/_normalize.scss */
+[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+   * 1. Correct the inability to style clickable types in iOS and Safari.
+   * 2. Change font properties to `inherit` in Safari.
+   */
+/* line 370, ../sass/_normalize.scss */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+}
+
+/* Interactive
+     ========================================================================== */
+/*
+   * Add the correct display in Edge, IE 10+, and Firefox.
+   */
+/* line 386, ../sass/_normalize.scss */
+details {
+  display: block;
+}
+
+/*
+   * Add the correct display in all browsers.
+   */
+/* line 395, ../sass/_normalize.scss */
+summary {
+  display: list-item;
+}
+
+/* Misc
+     ========================================================================== */
+/**
+   * Add the correct display in IE 10+.
+   */
+/* line 408, ../sass/_normalize.scss */
+template {
+  display: none;
+}
+
+/**
+   * Add the correct display in IE 10.
+   */
+/* line 417, ../sass/_normalize.scss */
+[hidden] {
+  display: none;
+}
+
+@font-face {
+  font-family: 'Gagalin-Regular';
+  src: url("../fonts/Gagalin-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Lifehack-Medium';
+  src: url("../fonts/Lifehack-Medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/Ubuntu-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Ubuntu';
+  src: url("../fonts/ubuntu-b-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+/* line 1, ../sass/_layout.scss */
+html,
+body {
+  height: 100%;
+}
+
+/* line 6, ../sass/_layout.scss */
+body {
+  font-size: 16px;
+  line-height: 1.42;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  position: relative;
+  font-family: 'Ubuntu', Helvetica, sans-serif;
+  font-weight: 300;
+  color: #2f3234;
+}
+
+/* line 16, ../sass/_layout.scss */
+.wrapper {
+  position: relative;
+  width: 100%;
+  min-width: 960px;
+  min-height: 100%;
+  overflow: hidden;
+}
+
+/* line 24, ../sass/_layout.scss */
+.section {
+  height: 100vh;
+  min-height: 650px;
+}
+
+/* line 29, ../sass/_layout.scss */
+.container {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+}
+
+/* line 39, ../sass/_layout.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  font-weight: normal;
+}
+
+/* line 49, ../sass/_layout.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 54, ../sass/_layout.scss */
+ul {
+  padding: 0;
+  margin: 0;
+}
+/* line 57, ../sass/_layout.scss */
+ul > li {
+  list-style: none;
+}
+
+/* line 62, ../sass/_layout.scss */
+p {
+  padding: 0;
+  margin: 0;
+}
+
+/* line 67, ../sass/_layout.scss */
+footer {
+  position: relative;
+  width: 100%;
+  align-items: flex-end;
+  display: flex;
+}
+
+/* line 74, ../sass/_layout.scss */
+.footer__container {
+  background-color: #2f3234;
+  display: flex;
+  width: 100%;
+}
+
+/* line 80, ../sass/_layout.scss */
+.footer__container-content {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* line 88, ../sass/_layout.scss */
+.footer__layout {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 93, ../sass/_layout.scss */
+.footer__address {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  font-family: "Ubuntu Light";
+  font-weight: 300;
+  padding: 4px 4px 2px;
+}
+
+/* line 103, ../sass/_layout.scss */
+.footer__phone {
+  padding: 0px 4px 4px;
+}
+
+/* line 107, ../sass/_layout.scss */
+.footer__phone-number {
+  color: #e45028;
+  font-family: "Ubuntu - Bold";
+  font-weight: 700;
+  text-decoration: none;
+}
+
+/* line 114, ../sass/_layout.scss */
+* {
+  box-sizing: border-box;
+}
+
+/* line 1, ../sass/_header.scss */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 11px 0;
+}
+
+/* line 8, ../sass/_header.scss */
+.header__buttons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 0 0 69px;
+}
+
+/* line 15, ../sass/_header.scss */
+.header__order-btn {
+  margin-left: 15px;
+}
+
+/* line 1, ../sass/_first.scss */
+.first {
+  background: url("../img/video-bg.png") center center/cover no-repeat;
+  position: relative;
+}
+
+/* line 6, ../sass/_first.scss */
+.first__container {
+  justify-content: flex-start;
+}
+
+/* line 10, ../sass/_first.scss */
+.first__content {
+  flex: .8;
+  display: flex;
+  align-items: center;
+}
+
+/* line 16, ../sass/_first.scss */
+.first__desc {
+  font-size: 65px;
+  font-family: 'Lifehack-Medium';
+  line-height: 1;
+  color: #fff;
+}
+
+/* line 1, ../sass/_button.scss */
+.btn {
+  padding: 10px 15px;
+  border-radius: 5px;
+  background-color: #e45028;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 500;
+  display: inline-block;
+  text-decoration: none;
+  height: 35px;
+}
+/* line 12, ../sass/_button.scss */
+.btn--bg-black:active {
+  display: block;
+}
+
+/* line 1, ../sass/_nav.scss */
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+
+/* line 6, ../sass/_nav.scss */
+.nav__item {
+  margin-right: 30px;
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  white-space: nowrap;
+}
+/* line 12, ../sass/_nav.scss */
+.nav__item:after {
+  content: "";
+  display: block;
+  width: 4px;
+  height: 4px;
+  background: #fff;
+  border-radius: 50%;
+  margin-left: 20px;
+}
+/* line 21, ../sass/_nav.scss */
+.nav__item:last-child {
+  margin-right: 0;
+}
+/* line 23, ../sass/_nav.scss */
+.nav__item:last-child:after {
+  display: none;
+}
+
+/* line 29, ../sass/_nav.scss */
+.nav__link {
+  font-size: 13px;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+/* line 1, ../sass/_section-title.scss */
+.section-title {
+  font-size: 72px;
+  font-family: 'Gagalin-Regular', Helvetica, sans-serif;
+  margin-bottom: 45px;
+  line-height: 1;
+  color: #f9b43b;
+}
+/* line 7, ../sass/_section-title.scss */
+.section-title--color-black {
+  color: #000;
+}
+/* line 10, ../sass/_section-title.scss */
+.section-title--centered {
+  text-align: center;
+}
+/* line 13, ../sass/_section-title.scss */
+.section-title--color-white {
+  color: #fff;
+}
+/* line 16, ../sass/_section-title.scss */
+.section-title--menu {
+  padding: 100px;
+  color: #fff;
+}
+
+/* line 1, ../sass/_arrow.scss */
+.arrow {
+  margin: 20px;
+  cursor: pointer;
+}
+
+/* line 6, ../sass/_arrow.scss */
+.arrow__down {
+  display: flex;
+  width: 50px;
+  position: absolute;
+  bottom: 40px;
+  left: 50%;
+  transform: translateX(-50%);
+  justify-content: center;
+}
+
+/* line 18, ../sass/_arrow.scss */
+.arrow__right {
+  transform: rotate(180deg);
+}
+
+/* line 1, ../sass/_best.scss */
+.best {
+  background: url("../img/bg-best.png") center center/cover no-repeat;
+}
+
+/* line 5, ../sass/_best.scss */
+.best__list {
+  display: flex;
+}
+
+/* line 9, ../sass/_best.scss */
+.best__item {
+  flex: 1;
+  margin-right: 10px;
+}
+/* line 12, ../sass/_best.scss */
+.best__item:last-child {
+  margin-right: 0;
+}
+
+/* line 1, ../sass/_feature.scss */
+.feature__desc {
+  text-align: center;
+}
+
+/* line 5, ../sass/_feature.scss */
+.feature__pic {
+  display: flex;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+/* line 11, ../sass/_feature.scss */
+.feature__title {
+  font-family: 'Lifehack-Medium';
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+/* line 18, ../sass/_feature.scss */
+.feature__text {
+  font-size: 14px;
+  font-weight: 300;
+  color: #2f3234;
+}
+
+/* line 1, ../sass/_reviews.scss */
+.reviews {
+  position: relative;
+}
+
+/* line 5, ../sass/_reviews.scss */
+.reviews__list {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+/* line 11, ../sass/_reviews.scss */
+.reviews__item {
+  width: 25%;
+  height: 50%;
+}
+
+/* line 1, ../sass/_review.scss */
+.review {
+  position: relative;
+  filter: grayscale(100%);
+}
+/* line 5, ../sass/_review.scss */
+.review:hover .review__hover {
+  opacity: 1;
+}
+
+/* line 11, ../sass/_review.scss */
+.review__avatar {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+/* line 17, ../sass/_review.scss */
+.review__hover {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
+  padding: 45px 5% 10px;
+  color: #fff;
+  opacity: 0;
+  transition: opacity .3s;
+}
+
+/* line 30, ../sass/_review.scss */
+.review__text {
+  margin-bottom: 20px;
+}
+
+/* line 1, ../sass/_types.scss */
+.types {
+  align-items: center;
+  display: flex;
+  background-color: #f9b43b;
+  background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
+}
+
+/* line 8, ../sass/_types.scss */
+.types__content {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 14, ../sass/_types.scss */
+.types__content-info {
+  position: relative;
+}
+
+/* line 18, ../sass/_types.scss */
+.types__desc {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  min-width: 441px;
+}
+
+/* line 26, ../sass/_types.scss */
+.types__price {
+  display: flex;
+  color: #e35028;
+  font-family: Gagalin;
+  font-weight: 400;
+  font-size: 72px;
+  padding: 8px 0;
+}
+
+/* line 35, ../sass/_types.scss */
+.types__currency {
+  display: flex;
+  color: #e35028;
+  font-family: Gagalin;
+  font-weight: 400;
+  font-size: 30px;
+  padding: 8px;
+}
+
+/* line 44, ../sass/_types.scss */
+.types__footer {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 49, ../sass/_types.scss */
+.types__cost {
+  display: flex;
+  align-items: baseline;
+}
+
+/* line 1, ../sass/_icon.scss */
+.icon {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* line 7, ../sass/_icon.scss */
+.icon__food {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 90px;
+  height: 90px;
+  background-color: #e35028;
+  opacity: 0.4;
+  border-radius: 5px;
+  cursor: pointer;
+}
+/* line 17, ../sass/_icon.scss */
+.icon__food:hover {
+  opacity: 1;
+  transition: 1s;
+}
+/* line 21, ../sass/_icon.scss */
+.icon__food:hover + .composition__table {
+  display: block;
+}
+
+/* line 26, ../sass/_icon.scss */
+.icon__kkal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+}
+
+/* line 36, ../sass/_icon.scss */
+.icon__desc {
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+}
+/* line 41, ../sass/_icon.scss */
+.icon__desc--quantity {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* line 1, ../sass/_menu.scss */
+.menu {
+  background: url(../img/menu-burgers.png) center center/cover no-repeat;
+  position: relative;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* line 9, ../sass/_menu.scss */
+.menu-content {
+  display: flex;
+}
+
+/* line 16, ../sass/_menu.scss */
+.menu-content__active-text {
+  width: 520px;
+  background-color: #2f3234;
+  color: #ffffff;
+  padding: 50px 30px;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  display: none;
+}
+
+/* line 28, ../sass/_menu.scss */
+.menu-content__img {
+  width: 80px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 32, ../sass/_menu.scss */
+.menu-content__img--meat {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/contain no-repeat;
+}
+/* line 35, ../sass/_menu.scss */
+.menu-content__img--vegetarian {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/contain no-repeat;
+}
+/* line 38, ../sass/_menu.scss */
+.menu-content__img--dietary {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/contain no-repeat;
+}
+/* line 41, ../sass/_menu.scss */
+.menu-content__img:active + .menu-content__active-text {
+  display: block;
+  transition: 2s;
+}
+
+/* line 47, ../sass/_menu.scss */
+.menu-content__for {
+  transform: rotate(-90deg);
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 40px;
+  font-weight: 400;
+  white-space: nowrap;
+  position: absolute;
+  bottom: 50px;
+  left: 0;
+  right: 0;
+}
+/* line 58, ../sass/_menu.scss */
+.menu-content__for:active {
+  color: #f9b43b;
+}
+
+/* line 1, ../sass/_team.scss */
+.team {
+  background: url(../img/team.png) center center/cover no-repeat;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* line 7, ../sass/_team.scss */
+.team__block {
+  background: linear-gradient(rgba(47, 50, 52, 0.8), rgba(47, 50, 52, 0.8));
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+/* line 14, ../sass/_team.scss */
+.team__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* line 21, ../sass/_team.scss */
+.team__member {
+  color: #ffffff;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 35px;
+}
+/* line 27, ../sass/_team.scss */
+.team__member:before {
+  content: "▼";
+  color: #f9b43b;
+}
+/* line 31, ../sass/_team.scss */
+.team__member--color-yellow {
+  color: #f9b43b;
+}
+/* line 32, ../sass/_team.scss */
+.team__member--color-yellow:before {
+  content: "▲";
+}
+
+/* line 1, ../sass/_operator.scss */
+.operator {
+  display: flex;
+  align-items: center;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  margin-bottom: 35px;
+}
+
+/* line 11, ../sass/_operator.scss */
+.operator__ava-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+/* line 18, ../sass/_operator.scss */
+.operator__info {
+  width: 208px;
+}
+
+/* line 22, ../sass/_operator.scss */
+.operator__title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* line 30, ../sass/_operator.scss */
+.operator__sub-title {
+  font-weight: 300;
+}
+
+/* line 1, ../sass/_composition-table.scss */
+.composition__table {
+  min-width: 270px;
+  background-color: #ffffff;
+  opacity: 0.9;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 18%;
+  display: none;
+}
+
+/* line 12, ../sass/_composition-table.scss */
+.composition__table-body {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+
+/* line 18, ../sass/_composition-table.scss */
+.composition__table-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+}
+/* line 23, ../sass/_composition-table.scss */
+.composition__table-row:last-child {
+  margin-bottom: 0;
+}
+
+/* line 28, ../sass/_composition-table.scss */
+.composition__ingredient {
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+/* line 35, ../sass/_composition-table.scss */
+.composition__quantity {
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+/* line 1, ../sass/_more-read.scss */
+.more-read {
+  width: 460px;
+  background-color: #ffffff;
+  color: #2f3234;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 20px;
+  position: absolute;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+}
+
+/* line 18, ../sass/_more-read.scss */
+.more-read__header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+/* line 24, ../sass/_more-read.scss */
+.more-read__title {
+  color: #2f3234;
+  font-family: Gagalin;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 28.11px;
+}
+
+/* line 32, ../sass/_more-read.scss */
+.more-read__close {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_working.scss */
+.working {
+  background: url(../img/bg-vidos.png) center center/cover no-repeat;
+}
+
+/* line 5, ../sass/_working.scss */
+.working__container {
+  justify-content: flex-start;
+  padding-top: 80px;
+  align-items: center;
+}
+
+/* line 11, ../sass/_working.scss */
+.working__video {
+  display: flex;
+  flex-direction: column;
+}
+
+/* line 1, ../sass/_delivery.scss */
+.delivery {
+  background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 10, ../sass/_delivery.scss */
+.delivery__container {
+  align-items: baseline;
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  justify-content: center;
+}
+
+/* line 20, ../sass/_delivery.scss */
+.delivery-info__layout {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+  width: 50%;
+  margin: 10px;
+}
+
+/* line 28, ../sass/_delivery.scss */
+.delivery__order-preference {
+  margin-bottom: 20px;
+}
+
+/* line 32, ../sass/_delivery.scss */
+.delivery__order-title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 40, ../sass/_delivery.scss */
+.delivery__order-textarea {
+  height: 109px;
+  width: 460px;
+  resize: none;
+  border: 1px solid #d1cfcb;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+
+/* line 1, ../sass/_panel.scss */
+.panel {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 6, ../sass/_panel.scss */
+.panel__layout {
+  display: flex;
+  flex: 1 1;
+  align-items: center;
+}
+
+/* line 12, ../sass/_panel.scss */
+.panel-field {
+  display: flex;
+  flex-direction: column;
+  padding: 8px;
+}
+/* line 16, ../sass/_panel.scss */
+.panel-field--street {
+  width: 100%;
+}
+/* line 19, ../sass/_panel.scss */
+.panel-field--number {
+  width: 100px;
+}
+
+/* line 24, ../sass/_panel.scss */
+.panel-field__title {
+  margin-bottom: 5px;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 33, ../sass/_panel.scss */
+.panel-field__input {
+  padding: 10px;
+  border: 1px solid transparent;
+  border-radius: 3px;
+  font-size: 14px;
+}
+/* line 38, ../sass/_panel.scss */
+.panel-field__input--active {
+  border: 2px solid #f9b43b;
+}
+
+/* line 1, ../sass/_radio-button.scss */
+.radio-buttons {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* line 6, ../sass/_radio-button.scss */
+.radio-button {
+  display: flex;
+  position: relative;
+  margin-right: 15px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+/* line 14, ../sass/_radio-button.scss */
+.radio-button__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* line 22, ../sass/_radio-button.scss */
+.radio-button__title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+}
+
+/* line 30, ../sass/_radio-button.scss */
+.radio-button__fake {
+  width: 18px;
+  height: 18px;
+  border: 1px solid #c9c9c9;
+  background: #fff;
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+
+/* line 64, ../sass/_radio-button.scss */
+.radio-button__fake::before {
+  content: "";
+  width: 0px;
+  height: 0px;
+  display: block;
+  border-radius: 50%;
+  background: #e35028;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  transition: 0.3s;
+}
+
+/* line 82, ../sass/_radio-button.scss */
+.radio-button__input:checked + .radio-button__fake::before {
+  width: 8px;
+  height: 8px;
+}
+
+/* line 1, ../sass/_order.scss */
+.order {
+  display: flex;
+}
+
+/* line 5, ../sass/_order.scss */
+.order__clear {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  padding: 0 20px;
+  cursor: pointer;
+}
+
+/* line 1, ../sass/_map.scss */
+.map {
+  background: url(../img/mapbg.png) center center/cover no-repeat;
+  display: flex;
+}
+
+/* line 6, ../sass/_map.scss */
+.map__container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+/* line 1, ../sass/_social-list.scss */
+.social__list {
+  display: flex;
+}
+
+/* line 5, ../sass/_social-list.scss */
+.social__link {
+  padding: 8px;
+}
+
+/* line 9, ../sass/_social-list.scss */
+.social__icon {
+  width: 20px;
+  height: 20px;
+  opacity: 0.3;
+}
+/* line 13, ../sass/_social-list.scss */
+.social__icon:hover {
+  opacity: 1;
+}
+/* line 16, ../sass/_social-list.scss */
+.social__icon--active {
+  opacity: 1;
+}
+
+/* line 1, ../sass/_check.scss */
+.option {
+  display: block;
+  margin-bottom: 0.5em;
+}
+
+/* line 6, ../sass/_check.scss */
+.check {
+  padding-left: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* line 11, ../sass/_check.scss */
+.check__input {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+/* line 19, ../sass/_check.scss */
+.check__box {
+  position: absolute;
+  margin-top: 0.2em;
+  margin-left: -1em;
+  width: 18px;
+  height: 18px;
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  background-color: #fff;
+}
+
+/* line 31, ../sass/_check.scss */
+.check__input:checked + .check__box {
+  background-color: #fff;
+  background-image: url(../img/checkbox.png);
+}
+
+/* line 36, ../sass/_check.scss */
+.check__box-title {
+  color: #ffffff;
+  font-family: Ubuntu;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  margin-left: 10px;
+}

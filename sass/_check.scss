@@ -1,0 +1,43 @@
+.option {
+    display: block;
+    margin-bottom: 0.5em;
+}
+
+.check {
+    padding-left: 1.2em;
+    margin-bottom: 20px;
+}
+
+.check__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+}
+
+.check__box {
+    position: absolute;
+    margin-top: 0.2em;
+    margin-left: -1em;
+    width: 18px;
+    height: 18px;
+    overflow: hidden;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-color: #fff;
+}
+
+.check__input:checked+.check__box {
+    background-color: #fff;
+    background-image: url(../img/checkbox.png);
+}
+
+.check__box-title {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    margin-left: 10px;
+}

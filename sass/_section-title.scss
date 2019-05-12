@@ -1,0 +1,20 @@
+.section-title {
+    font-size: 72px;
+    @include gagalin();
+    margin-bottom: 45px;
+    line-height: 1;
+    color: $yellow;
+    &--color-black {
+        color: #000;
+    }
+    &--centered {
+        text-align: center;
+    }
+    &--color-white {
+        color: #fff;
+    }
+    &--menu {
+        padding: 100px;
+        color: #fff;
+    }
+}

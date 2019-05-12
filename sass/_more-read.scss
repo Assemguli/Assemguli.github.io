@@ -1,0 +1,36 @@
+.more-read {
+    width: 460px;
+    background-color: #ffffff;
+    color: #2f3234;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 20px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.more-read__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.more-read__title {
+    color: #2f3234;
+    font-family: Gagalin;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 28.11px;
+}
+
+.more-read__close {
+    background: none;
+    border: 0;
+    cursor: pointer;
+}

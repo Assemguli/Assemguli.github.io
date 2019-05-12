@@ -1,0 +1,41 @@
+.panel {
+    display: flex;
+    flex-direction: row;
+}
+
+.panel__layout {
+    display: flex;
+    flex: 1 1;
+    align-items: center;
+}
+
+.panel-field {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    &--street {
+        width: 100%;
+    }
+    &--number {
+        width: 100px;
+    }
+}
+
+.panel-field__title {
+    margin-bottom: 5px;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.panel-field__input {
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 3px;
+    font-size: 14px;
+    &--active {
+        border: 2px solid #f9b43b;
+    }
+}

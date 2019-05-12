@@ -1,0 +1,15 @@
+.order {
+    display: flex;
+}
+
+.order__clear {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+    padding: 0 20px;
+    cursor: pointer;
+}

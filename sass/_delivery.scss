@@ -1,0 +1,47 @@
+.delivery {
+    background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.delivery__container {
+    align-items: baseline;
+    width: 940px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    justify-content: center;
+}
+
+.delivery-info__layout {
+    display: flex;
+    flex-direction: column;
+    padding: 8px;
+    width: 50%;
+    margin: 10px;
+}
+
+.delivery__order-preference {
+    margin-bottom: 20px;
+}
+
+.delivery__order-title {
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.delivery__order-textarea {
+    height: 109px;
+    width: 460px;
+    resize: none;
+    border: 1px solid #d1cfcb;
+    background-color: #ffffff;
+    border-radius: 5px;
+}

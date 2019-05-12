@@ -1,0 +1,14 @@
+.working {
+    background: url(../img/bg-vidos.png) center center/cover no-repeat;
+}
+
+.working__container {
+    justify-content: flex-start;
+    padding-top: 80px;
+    align-items: center;
+}
+
+.working__video {
+    display: flex;
+    flex-direction: column;
+}

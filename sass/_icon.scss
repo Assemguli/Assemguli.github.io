@@ -1,0 +1,47 @@
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.icon__food {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 90px;
+    height: 90px;
+    background-color: #e35028;
+    opacity: 0.4;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        opacity: 1;
+        transition: 1s;
+    }
+    &:hover+.composition__table {
+        display: block;
+    }
+}
+
+.icon__kkal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    opacity: 0.5;
+}
+
+.icon__desc {
+    color: #ffffff;
+    font-family: Gagalin;
+    font-size: 14px;
+    font-weight: 400;
+    &--quantity {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
