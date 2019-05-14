@@ -1,40 +1,24 @@
-.composition__table {
-    min-width: 270px;
+.composition {
+    width: 250px;
+    background-color: #fff;
     background-color: #ffffff;
     opacity: 0.9;
     border-radius: 5px;
+    padding: 20px;
     position: absolute;
     top: 0;
     left: 18%;
     display: none;
 }
 
-.composition__table-body {
-    display: flex;
-    flex-direction: column;
-    padding: 20px;
-}
-
-.composition__table-row {
+.composition__item {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 15px;
-    &:last-child {
-        margin-bottom: 0;
-    }
+    padding: 8px;
 }
 
-.composition__ingredient {
-    color: #2f3234;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 500;
-}
-
-.composition__quantity {
-    color: #2f3234;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 300;
+.composition__name {
+    display: flex;
+    justify-content: flex-start;
 }

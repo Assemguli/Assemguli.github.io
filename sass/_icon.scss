@@ -13,12 +13,14 @@
     background-color: #e35028;
     opacity: 0.4;
     border-radius: 5px;
+    position: relative;
     cursor: pointer;
     &:hover {
+        position: relative;
         opacity: 1;
         transition: 1s;
     }
-    &:hover+.composition__table {
+    &:hover+.composition {
         display: block;
     }
 }

@@ -873,19 +873,21 @@ footer {
   background-color: #e35028;
   opacity: 0.4;
   border-radius: 5px;
+  position: relative;
   cursor: pointer;
 }
-/* line 17, ../sass/_icon.scss */
+/* line 18, ../sass/_icon.scss */
 .icon__food:hover {
+  position: relative;
   opacity: 1;
   transition: 1s;
 }
-/* line 21, ../sass/_icon.scss */
-.icon__food:hover + .composition__table {
+/* line 23, ../sass/_icon.scss */
+.icon__food:hover + .composition {
   display: block;
 }
 
-/* line 26, ../sass/_icon.scss */
+/* line 28, ../sass/_icon.scss */
 .icon__kkal {
   display: flex;
   align-items: center;
@@ -896,14 +898,14 @@ footer {
   opacity: 0.5;
 }
 
-/* line 36, ../sass/_icon.scss */
+/* line 38, ../sass/_icon.scss */
 .icon__desc {
   color: #ffffff;
   font-family: Gagalin;
   font-size: 14px;
   font-weight: 400;
 }
-/* line 41, ../sass/_icon.scss */
+/* line 43, ../sass/_icon.scss */
 .icon__desc--quantity {
   position: absolute;
   top: 50%;
@@ -1123,50 +1125,31 @@ footer {
 }
 
 /* line 1, ../sass/_composition-table.scss */
-.composition__table {
-  min-width: 270px;
+.composition {
+  width: 250px;
+  background-color: #fff;
   background-color: #ffffff;
   opacity: 0.9;
   border-radius: 5px;
+  padding: 20px;
   position: absolute;
   top: 0;
   left: 18%;
   display: none;
 }
 
-/* line 12, ../sass/_composition-table.scss */
-.composition__table-body {
-  display: flex;
-  flex-direction: column;
-  padding: 20px;
-}
-
-/* line 18, ../sass/_composition-table.scss */
-.composition__table-row {
+/* line 14, ../sass/_composition-table.scss */
+.composition__item {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 15px;
-}
-/* line 23, ../sass/_composition-table.scss */
-.composition__table-row:last-child {
-  margin-bottom: 0;
+  padding: 8px;
 }
 
-/* line 28, ../sass/_composition-table.scss */
-.composition__ingredient {
-  color: #2f3234;
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-weight: 500;
-}
-
-/* line 35, ../sass/_composition-table.scss */
-.composition__quantity {
-  color: #2f3234;
-  font-family: Ubuntu;
-  font-size: 14px;
-  font-weight: 300;
+/* line 21, ../sass/_composition-table.scss */
+.composition__name {
+  display: flex;
+  justify-content: flex-start;
 }
 
 /* line 1, ../sass/_more-read.scss */
