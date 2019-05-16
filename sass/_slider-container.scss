@@ -1,0 +1,19 @@
+.slider-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.slider-content{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.active-slide {
+    display: flex;
+}
+
+.hidden {
+    display: none;
+}

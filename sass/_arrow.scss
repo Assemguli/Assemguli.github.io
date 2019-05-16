@@ -1,6 +1,7 @@
 .arrow {
     margin: 20px;
     cursor: pointer;
+    display: flex;
 }
 
 .arrow__down {
@@ -13,8 +14,10 @@
     justify-content: center;
 }
 
-// .arrow__left {
-// }
+.arrow__left {
+align-items: flex-start;
+}
 .arrow__right {
+ align-items: flex-end;
     transform: rotate(180deg);
 }

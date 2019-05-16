@@ -1,61 +1,314 @@
-.menu {
-    background: url(../img/menu-burgers.png) center center/cover no-repeat;
-    position: relative;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-}
-
-.menu-content {
-    display: flex;
-}
-
-// .menu-content__active {
+// .layout {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     align-items: stretch;
+//     justify-content: flex-start;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     flex: 1 1 auto;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1rem;
+//     width: 100vw;
+//     height: 100vh;
+// }
+// .layout__block {
+//     display: flex;
+//     flex-flow: column nowrap;
+//     align-items: stretch;
+//     justify-content: flex-start;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     flex: 1 1 auto;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1rem;
+// }
+// .vartical-accordion{
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: stretch;
+//     justify-content: flex-end;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     flex: 1 1 auto;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1rem;
+// }
+// .vartical-accordion__item{
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: stretch;
+//     justify-content: flex-start;
+//     overflow-x: hidden;
+//     overflow-y: auto;
+//     flex: 0 0 auto;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1rem;
+// }
+// .about-block {
+//     display: flex;
+//     width: 53px;
+//     flex-flow: row nowrap;
+//     align-items: stretch;
+//     justify-content: flex-start;
+//     overflow: hidden;
+//     flex: 1 1 auto;
+//     box-sizing: border-box;
+//     padding: 0;
+//     margin: 0;
+//     font-size: 1rem;
+//     transition: width 0.35s ease-in-out;
+// }
+// .about-block:hover{
+//     width: 30rem;
+// }
+// .about-block:hover  .about-block__body{
 //     display: flex;
 // }
-.menu-content__active-text {
-    width: 520px;
-    background-color: #2f3234;
-    color: #ffffff;
-    padding: 50px 30px;
-    font-family: Ubuntu;
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-    display: none;
+// .about-block__header {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: flex-end;
+//     justify-content: flex-end;
+//     flex: 0 0 auto;
+//     box-sizing: border-box;
+//     padding: 1rem;
+//     background-color: #4caf50;
+//     box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.5);
+//     z-index: 1;
+//     writing-mode: vertical-rl;
+//     text-orientation: mixed;
+//     font-size: 1rem;
+//     font-weight: 700;
+//     color: #fff;
+// }
+// .about-block__header--second{
+//     background-color: #ffc107;
+// }
+// .about-block__header--third{
+//     background-color: #fe5722;
+// }
+// .about-block__body {
+//     display: flex;
+//     flex-flow: row nowrap;
+//     align-items: flex-start;
+//     justify-content: flex-start;
+//     flex: 1 1 auto;
+//     box-sizing: border-box;
+//     padding: 1rem;
+//     background-color: #8ac24a;
+// }
+// .about-block__body--second {
+//     background-color: #ffeb3b;
+// }
+// .about-block__body--third {
+//     background-color: #ff663b;
+// }
+
+.menu {
+    display: flex;
+    background: url(../img/menu-burgers.png) center center/cover no-repeat;
+    flex-flow: column nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    width: 100vw;
+    height: 100vh;
 }
 
-.menu-content__img {
+.menu__content {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    width: 100vw;
+    height: 100vh;
+}
+
+.menu__list {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-end;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.menu__item {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow-x: hidden;
+    overflow-y: auto;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+}
+
+.menu__about {
+    display: flex;
     width: 80px;
-    position: relative;
-    cursor: pointer;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: flex-start;
+    overflow: hidden;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-size: 1rem;
+    transition: width 0.35s;
+
     &--meat {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/contain no-repeat;
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
     }
+
     &--vegetarian {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/contain no-repeat;
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
     }
+
     &--dietary {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/contain no-repeat;
-    }
-    &:active+.menu-content__active-text {
-        display: block;
-        transition: 2s;
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
     }
 }
 
-.menu-content__for {
-    transform: rotate(-90deg);
+.menu__about:hover {
+    width: 35rem;
+}
+
+.menu__about:hover .menu__about-body {
+    display: flex;
+}
+
+.menu__about-header {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: flex-end;
+    flex: 0 0 auto;
+    box-sizing: border-box;
+    padding: 1rem;
+    z-index: 1;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
     color: #ffffff;
     font-family: Gagalin;
     font-size: 40px;
     font-weight: 400;
     white-space: nowrap;
-    position: absolute;
-    bottom: 50px;
-    left: 0;
-    right: 0;
-    &:active {
+    width: 80px;
+    &:hover{
         color: #f9b43b;
     }
 }
+
+.menu__about-body {
+    display: none;
+    flex-flow: row nowrap;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex: 1 1 auto;
+    box-sizing: border-box;
+    padding: 2rem;
+    background-color: #2f3234;
+    color: #ffffff;
+    font-family: Ubuntu;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+
+// .menu__about-header-title{
+//     transform: rotate(-180deg);
+// }
+
+
+
+
+
+// .menu {
+//     background: url(../img/menu-burgers.png) center center/cover no-repeat;
+//     display: flex;
+//     justify-content: space-between;
+// }
+
+// .menu-content {
+//     display: flex;
+//     flex-direction: row;
+// }
+
+// .menu-content__active-text {
+//     width: 520px;
+// background-color: #2f3234;
+// color: #ffffff;
+// padding: 50px 30px;
+// font-family: Ubuntu;
+// font-size: 14px;
+// font-weight: 300;
+// line-height: 24px;
+//     display: none;
+// }
+
+// .menu-content__img {
+//     width: 80px;
+//     position: relative;
+//     cursor: pointer;
+//     &--meat {
+//         background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
+//     }
+//     &--vegetarian {
+//         background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
+//     }
+//     &--dietary {
+//         background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
+//     }
+//     &:active+.menu-content__active-text {
+//         display: block;
+//         transition: 2s;
+//     }
+// }
+
+// .menu-content__for {
+//     transform: rotate(-90deg);
+//     color: #ffffff;
+//     font-family: Gagalin;
+//     font-size: 40px;
+//     font-weight: 400;
+//     white-space: nowrap;
+//     position: absolute;
+//     bottom: 50px;
+//     left: 0;
+//     right: 0;
+//     &:active {
+//         color: #f9b43b;
+//     }
+// }
