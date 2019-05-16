@@ -5,15 +5,19 @@
     background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }
 
+.types__composition {
+    position: relative;
+    display: inline-block;
+}
+
+.types__composition:hover .composition{
+    display: block;
+}
 
 .types__content-img-icon{
     width: 450px;
     height: 300px;
     margin: 30px;
-}
-
-.types__content-composition {
-    position: relative;
 }
 
 .types__desc {

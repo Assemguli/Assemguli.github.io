@@ -16,12 +16,8 @@
     position: relative;
     cursor: pointer;
     &:hover {
-        position: relative;
         opacity: 1;
-        transition: 1s;
-    }
-    &:hover+.composition {
-        display: block;
+        transition: 0.3s;
     }
 }
 

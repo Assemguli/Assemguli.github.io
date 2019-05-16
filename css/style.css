@@ -839,19 +839,25 @@ footer {
   background-image: linear-gradient(to top, #f9b43b 0%, #eb8c38 48%, #f9b43b 74%, #f9b43b 100%);
 }
 
-/* line 9, ../sass/_types.scss */
+/* line 8, ../sass/_types.scss */
+.types__composition {
+  position: relative;
+  display: inline-block;
+}
+
+/* line 13, ../sass/_types.scss */
+.types__composition:hover .composition {
+  display: block;
+}
+
+/* line 17, ../sass/_types.scss */
 .types__content-img-icon {
   width: 450px;
   height: 300px;
   margin: 30px;
 }
 
-/* line 15, ../sass/_types.scss */
-.types__content-composition {
-  position: relative;
-}
-
-/* line 19, ../sass/_types.scss */
+/* line 23, ../sass/_types.scss */
 .types__desc {
   color: #ffffff;
   font-family: Ubuntu;
@@ -860,7 +866,7 @@ footer {
   min-width: 441px;
 }
 
-/* line 27, ../sass/_types.scss */
+/* line 31, ../sass/_types.scss */
 .types__price {
   display: flex;
   color: #e35028;
@@ -870,7 +876,7 @@ footer {
   padding: 8px 0;
 }
 
-/* line 36, ../sass/_types.scss */
+/* line 40, ../sass/_types.scss */
 .types__currency {
   display: flex;
   color: #e35028;
@@ -880,13 +886,13 @@ footer {
   padding: 8px;
 }
 
-/* line 45, ../sass/_types.scss */
+/* line 49, ../sass/_types.scss */
 .types__footer {
   display: flex;
   align-items: baseline;
 }
 
-/* line 50, ../sass/_types.scss */
+/* line 54, ../sass/_types.scss */
 .types__cost {
   display: flex;
   align-items: baseline;
@@ -914,16 +920,11 @@ footer {
 }
 /* line 18, ../sass/_icon.scss */
 .icon__food:hover {
-  position: relative;
   opacity: 1;
-  transition: 1s;
-}
-/* line 23, ../sass/_icon.scss */
-.icon__food:hover + .composition {
-  display: block;
+  transition: 0.3s;
 }
 
-/* line 28, ../sass/_icon.scss */
+/* line 24, ../sass/_icon.scss */
 .icon__kkal {
   display: flex;
   align-items: center;
@@ -934,14 +935,14 @@ footer {
   opacity: 0.5;
 }
 
-/* line 38, ../sass/_icon.scss */
+/* line 34, ../sass/_icon.scss */
 .icon__desc {
   color: #ffffff;
   font-family: Gagalin;
   font-size: 14px;
   font-weight: 400;
 }
-/* line 43, ../sass/_icon.scss */
+/* line 39, ../sass/_icon.scss */
 .icon__desc--quantity {
   position: absolute;
   top: 50%;
@@ -1241,13 +1242,16 @@ footer {
   opacity: 0.9;
   border-radius: 5px;
   padding: 20px;
-  position: absolute;
   top: 0;
-  left: 18%;
+  left: 100%;
   display: none;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
 }
 
-/* line 13, ../sass/_composition-table.scss */
+/* line 16, ../sass/_composition-table.scss */
 .composition__item {
   display: flex;
   justify-content: space-between;
@@ -1255,7 +1259,7 @@ footer {
   padding: 8px;
 }
 
-/* line 20, ../sass/_composition-table.scss */
+/* line 23, ../sass/_composition-table.scss */
 .composition__name {
   display: flex;
   justify-content: flex-start;
