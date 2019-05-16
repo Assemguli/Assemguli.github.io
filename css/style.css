@@ -401,13 +401,13 @@ template {
   font-weight: bold;
   font-style: normal;
 }
-/* line 1, ../sass/_layout.scss */
+/* line 1, ../sass/_helpers.scss */
 html,
 body {
   height: 100%;
 }
 
-/* line 6, ../sass/_layout.scss */
+/* line 6, ../sass/_helpers.scss */
 body {
   font-size: 16px;
   line-height: 1.42;
@@ -419,7 +419,7 @@ body {
   color: #2f3234;
 }
 
-/* line 16, ../sass/_layout.scss */
+/* line 16, ../sass/_helpers.scss */
 .wrapper {
   position: relative;
   width: 100%;
@@ -428,13 +428,13 @@ body {
   overflow: hidden;
 }
 
-/* line 24, ../sass/_layout.scss */
+/* line 24, ../sass/_helpers.scss */
 .section {
   height: 100vh;
   min-height: 650px;
 }
 
-/* line 29, ../sass/_layout.scss */
+/* line 29, ../sass/_helpers.scss */
 .container {
   width: 940px;
   margin: 0 auto;
@@ -444,7 +444,7 @@ body {
   justify-content: center;
 }
 
-/* line 39, ../sass/_layout.scss */
+/* line 39, ../sass/_helpers.scss */
 h1,
 h2,
 h3,
@@ -455,29 +455,57 @@ h6 {
   font-weight: normal;
 }
 
-/* line 49, ../sass/_layout.scss */
+/* line 49, ../sass/_helpers.scss */
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
 
-/* line 54, ../sass/_layout.scss */
+/* line 54, ../sass/_helpers.scss */
 ul {
   padding: 0;
   margin: 0;
 }
-/* line 57, ../sass/_layout.scss */
+/* line 57, ../sass/_helpers.scss */
 ul > li {
   list-style: none;
 }
 
-/* line 62, ../sass/_layout.scss */
+/* line 62, ../sass/_helpers.scss */
 p {
   padding: 0;
   margin: 0;
 }
 
-/* line 67, ../sass/_layout.scss */
+/* line 67, ../sass/_helpers.scss */
+.slider-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+/* line 73, ../sass/_helpers.scss */
+.slider-content {
+  display: flex;
+  flex-direction: row;
+}
+
+/* line 78, ../sass/_helpers.scss */
+.active-slide {
+  display: flex;
+}
+
+/* line 82, ../sass/_helpers.scss */
+.hidden {
+  display: none;
+}
+
+/* line 86, ../sass/_helpers.scss */
+.rotate {
+  transform: rotate(180deg);
+}
+
+/* line 90, ../sass/_helpers.scss */
 footer {
   position: relative;
   width: 100%;
@@ -485,14 +513,14 @@ footer {
   display: flex;
 }
 
-/* line 74, ../sass/_layout.scss */
+/* line 97, ../sass/_helpers.scss */
 .footer__container {
   background-color: #2f3234;
   display: flex;
   width: 100%;
 }
 
-/* line 80, ../sass/_layout.scss */
+/* line 103, ../sass/_helpers.scss */
 .footer__container-content {
   width: 940px;
   margin: 0 auto;
@@ -501,13 +529,13 @@ footer {
   align-items: center;
 }
 
-/* line 88, ../sass/_layout.scss */
+/* line 111, ../sass/_helpers.scss */
 .footer__layout {
   display: flex;
   flex-direction: column;
 }
 
-/* line 93, ../sass/_layout.scss */
+/* line 116, ../sass/_helpers.scss */
 .footer__address {
   color: #ffffff;
   font-size: 14px;
@@ -518,12 +546,12 @@ footer {
   padding: 4px 4px 2px;
 }
 
-/* line 103, ../sass/_layout.scss */
+/* line 126, ../sass/_helpers.scss */
 .footer__phone {
   padding: 0px 4px 4px;
 }
 
-/* line 107, ../sass/_layout.scss */
+/* line 130, ../sass/_helpers.scss */
 .footer__phone-number {
   color: #e45028;
   font-family: "Ubuntu - Bold";
@@ -531,7 +559,7 @@ footer {
   text-decoration: none;
 }
 
-/* line 114, ../sass/_layout.scss */
+/* line 137, ../sass/_helpers.scss */
 * {
   box-sizing: border-box;
 }
@@ -693,12 +721,12 @@ footer {
 
 /* line 17, ../sass/_arrow.scss */
 .arrow__left {
-  align-items: flex-start;
+  align-items: center;
 }
 
 /* line 20, ../sass/_arrow.scss */
 .arrow__right {
-  align-items: flex-end;
+  align-items: center;
   transform: rotate(180deg);
 }
 
@@ -921,7 +949,7 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-/* line 115, ../sass/_menu.scss */
+/* line 1, ../sass/_menu.scss */
 .menu {
   display: flex;
   background: url(../img/menu-burgers.png) center center/cover no-repeat;
@@ -939,7 +967,7 @@ footer {
   height: 100vh;
 }
 
-/* line 132, ../sass/_menu.scss */
+/* line 18, ../sass/_menu.scss */
 .menu__content {
   display: flex;
   flex-flow: row nowrap;
@@ -956,29 +984,24 @@ footer {
   height: 100vh;
 }
 
-/* line 148, ../sass/_menu.scss */
+/* line 34, ../sass/_menu.scss */
 .menu__list {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: flex-end;
-  overflow-x: hidden;
-  overflow-y: auto;
   flex: 1 1 auto;
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  font-size: 1rem;
 }
 
-/* line 162, ../sass/_menu.scss */
+/* line 47, ../sass/_menu.scss */
 .menu__item {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
   justify-content: flex-start;
-  overflow-x: hidden;
-  overflow-y: auto;
   flex: 0 0 auto;
   box-sizing: border-box;
   padding: 0;
@@ -986,7 +1009,7 @@ footer {
   font-size: 1rem;
 }
 
-/* line 176, ../sass/_menu.scss */
+/* line 61, ../sass/_menu.scss */
 .menu__about {
   display: flex;
   width: 80px;
@@ -999,32 +1022,32 @@ footer {
   padding: 0;
   margin: 0;
   font-size: 1rem;
-  transition: width 0.35s;
+  transition: 0.35s;
 }
-/* line 190, ../sass/_menu.scss */
+/* line 75, ../sass/_menu.scss */
 .menu__about--meat {
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
 }
-/* line 194, ../sass/_menu.scss */
+/* line 79, ../sass/_menu.scss */
 .menu__about--vegetarian {
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
 }
-/* line 198, ../sass/_menu.scss */
+/* line 83, ../sass/_menu.scss */
 .menu__about--dietary {
   background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
 }
 
-/* line 203, ../sass/_menu.scss */
+/* line 88, ../sass/_menu.scss */
 .menu__about:hover {
   width: 35rem;
 }
 
-/* line 207, ../sass/_menu.scss */
+/* line 92, ../sass/_menu.scss */
 .menu__about:hover .menu__about-body {
   display: flex;
 }
 
-/* line 211, ../sass/_menu.scss */
+/* line 96, ../sass/_menu.scss */
 .menu__about-header {
   display: flex;
   flex-flow: row nowrap;
@@ -1043,12 +1066,12 @@ footer {
   white-space: nowrap;
   width: 80px;
 }
-/* line 228, ../sass/_menu.scss */
+/* line 113, ../sass/_menu.scss */
 .menu__about-header:hover {
   color: #f9b43b;
 }
 
-/* line 233, ../sass/_menu.scss */
+/* line 118, ../sass/_menu.scss */
 .menu__about-body {
   display: none;
   flex-flow: row nowrap;
@@ -1063,6 +1086,10 @@ footer {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+}
+/* line 132, ../sass/_menu.scss */
+.menu__about-body:visited + .menu__about-header {
+  color: #f9b43b;
 }
 
 /* line 1, ../sass/_team.scss */
@@ -1565,28 +1592,4 @@ footer {
   font-weight: 300;
   line-height: 24px;
   margin-left: 10px;
-}
-
-/* line 1, ../sass/_slider-container.scss */
-.slider-container {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* line 7, ../sass/_slider-container.scss */
-.slider-content {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-}
-
-/* line 13, ../sass/_slider-container.scss */
-.active-slide {
-  display: flex;
-}
-
-/* line 17, ../sass/_slider-container.scss */
-.hidden {
-  display: none;
 }
