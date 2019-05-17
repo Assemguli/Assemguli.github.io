@@ -703,28 +703,23 @@ footer {
 
 /* line 1, ../sass/_arrow.scss */
 .arrow {
-  margin: 20px;
   cursor: pointer;
   display: flex;
 }
 
-/* line 7, ../sass/_arrow.scss */
+/* line 6, ../sass/_arrow.scss */
 .arrow__down {
-  display: flex;
-  width: 50px;
   position: absolute;
-  bottom: 40px;
-  left: 50%;
-  transform: translateX(-50%);
-  justify-content: center;
+  left: 49%;
+  bottom: -70px;
 }
 
-/* line 17, ../sass/_arrow.scss */
+/* line 12, ../sass/_arrow.scss */
 .arrow__left {
   align-items: center;
 }
 
-/* line 20, ../sass/_arrow.scss */
+/* line 15, ../sass/_arrow.scss */
 .arrow__right {
   align-items: center;
   transform: rotate(180deg);
@@ -1254,15 +1249,25 @@ footer {
 /* line 16, ../sass/_composition-table.scss */
 .composition__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 8px;
 }
 
 /* line 23, ../sass/_composition-table.scss */
+.composition__icon {
+  padding: 8px;
+}
+
+/* line 27, ../sass/_composition-table.scss */
 .composition__name {
   display: flex;
   justify-content: flex-start;
+  padding: 8px;
+}
+
+/* line 33, ../sass/_composition-table.scss */
+.composition__quantity {
+  padding: 8px;
 }
 
 /* line 1, ../sass/_more-read.scss */

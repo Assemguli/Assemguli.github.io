@@ -15,12 +15,22 @@
 
 .composition__item {
     display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     align-items: center;
     padding: 8px;
+}
+
+.composition__icon{
+padding: 8px;
 }
 
 .composition__name {
     display: flex;
     justify-content: flex-start;
+    padding: 8px;
+}
+
+.composition__quantity{
+    padding: 8px;
+
 }

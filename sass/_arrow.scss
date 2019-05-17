@@ -1,23 +1,18 @@
 .arrow {
-    margin: 20px;
     cursor: pointer;
     display: flex;
 }
 
 .arrow__down {
-    display: flex;
-    width: 50px;
     position: absolute;
-    bottom: 40px;
-    left: 50%;
-    transform: translateX(-50%);
-    justify-content: center;
+    left: 49%;
+    bottom: -70px;
 }
 
 .arrow__left {
 align-items: center;
 }
 .arrow__right {
- align-items: center;
+align-items: center;
     transform: rotate(180deg);
 }
