@@ -11,7 +11,8 @@
 }
 
 .types__composition:hover .composition{
-    display: block;
+    display: flex;
+    flex-direction: column;
 }
 
 .types__content-img-icon{

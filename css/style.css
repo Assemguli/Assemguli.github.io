@@ -842,17 +842,18 @@ footer {
 
 /* line 13, ../sass/_types.scss */
 .types__composition:hover .composition {
-  display: block;
+  display: flex;
+  flex-direction: column;
 }
 
-/* line 17, ../sass/_types.scss */
+/* line 18, ../sass/_types.scss */
 .types__content-img-icon {
   width: 450px;
   height: 300px;
   margin: 30px;
 }
 
-/* line 23, ../sass/_types.scss */
+/* line 24, ../sass/_types.scss */
 .types__desc {
   color: #ffffff;
   font-family: Ubuntu;
@@ -861,7 +862,7 @@ footer {
   min-width: 441px;
 }
 
-/* line 31, ../sass/_types.scss */
+/* line 32, ../sass/_types.scss */
 .types__price {
   display: flex;
   color: #e35028;
@@ -871,7 +872,7 @@ footer {
   padding: 8px 0;
 }
 
-/* line 40, ../sass/_types.scss */
+/* line 41, ../sass/_types.scss */
 .types__currency {
   display: flex;
   color: #e35028;
@@ -881,13 +882,13 @@ footer {
   padding: 8px;
 }
 
-/* line 49, ../sass/_types.scss */
+/* line 50, ../sass/_types.scss */
 .types__footer {
   display: flex;
   align-items: baseline;
 }
 
-/* line 54, ../sass/_types.scss */
+/* line 55, ../sass/_types.scss */
 .types__cost {
   display: flex;
   align-items: baseline;
@@ -1232,7 +1233,7 @@ footer {
 
 /* line 1, ../sass/_composition-table.scss */
 .composition {
-  width: 250px;
+  min-width: 250px;
   background-color: #ffffff;
   opacity: 0.9;
   border-radius: 5px;
@@ -1241,33 +1242,21 @@ footer {
   left: 100%;
   display: none;
   position: absolute;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
-/* line 16, ../sass/_composition-table.scss */
+/* line 14, ../sass/_composition-table.scss */
 .composition__item {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   padding: 8px;
 }
 
-/* line 23, ../sass/_composition-table.scss */
-.composition__icon {
-  padding: 8px;
-}
-
-/* line 27, ../sass/_composition-table.scss */
+/* line 25, ../sass/_composition-table.scss */
 .composition__name {
   display: flex;
   justify-content: flex-start;
-  padding: 8px;
-}
-
-/* line 33, ../sass/_composition-table.scss */
-.composition__quantity {
-  padding: 8px;
 }
 
 /* line 1, ../sass/_more-read.scss */
@@ -1334,7 +1323,7 @@ footer {
   background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
   display: flex;
   flex-direction: column;
-  height: 100%;
+  height: 100vh;
   justify-content: center;
   align-items: center;
 }
@@ -1346,7 +1335,7 @@ footer {
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  height: 100%;
+  height: 50%;
   justify-content: center;
 }
 

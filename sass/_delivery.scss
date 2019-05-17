@@ -2,7 +2,7 @@
     background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
     display: flex;
     flex-direction: column;
-    height: 100%;
+    height: 100vh;
     justify-content: center;
     align-items: center;
 }
@@ -13,7 +13,7 @@
     margin: 0 auto;
     display: flex;
     flex-direction: row;
-    height: 100%;
+    height: 50%;
     justify-content: center;
 }
 
