@@ -613,7 +613,7 @@ footer {
 
 /* line 1, ../sass/_button.scss */
 .btn {
-  padding: 10px 15px;
+  padding: 8px 15px;
   border-radius: 5px;
   background-color: #e45028;
   text-transform: uppercase;
@@ -1323,8 +1323,8 @@ footer {
   flex-direction: column;
 }
 
-/* line 1, ../sass/_delivery.scss */
-.delivery {
+/* line 1, ../sass/_form.scss */
+.form {
   background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
   display: flex;
   flex-direction: column;
@@ -1333,8 +1333,8 @@ footer {
   align-items: center;
 }
 
-/* line 10, ../sass/_delivery.scss */
-.delivery__container {
+/* line 10, ../sass/_form.scss */
+.form__container {
   align-items: baseline;
   width: 940px;
   margin: 0 auto;
@@ -1344,68 +1344,74 @@ footer {
   justify-content: center;
 }
 
-/* line 20, ../sass/_delivery.scss */
-.delivery-info__layout {
+/* line 20, ../sass/_form.scss */
+.form-info__layout {
   display: flex;
   flex-direction: column;
-  padding: 8px;
   width: 50%;
-  margin: 10px;
+  margin: 5px;
 }
 
-/* line 28, ../sass/_delivery.scss */
-.delivery__order-preference {
-  margin-bottom: 20px;
-}
-
-/* line 32, ../sass/_delivery.scss */
-.delivery__order-title {
+/* line 31, ../sass/_form.scss */
+.form__order-title {
   color: #ffffff;
   font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
+  margin-bottom: 5px;
 }
 
-/* line 40, ../sass/_delivery.scss */
-.delivery__order-textarea {
+/* line 40, ../sass/_form.scss */
+.form__order-textarea {
   height: 109px;
   width: 460px;
   resize: none;
-  border: 1px solid #d1cfcb;
+  border: 2px solid #d1cfcb;
   background-color: #ffffff;
   border-radius: 5px;
+}
+/* line 47, ../sass/_form.scss */
+.form__order-textarea:hover,
+.form__order-textarea :active,
+.form__order-textarea :focus {
+  border: 2px solid #f9b43b;
 }
 
 /* line 1, ../sass/_panel.scss */
 .panel {
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
+}
+/* line 5, ../sass/_panel.scss */
+.panel--radio-button {
+  margin-bottom: 30px;
 }
 
-/* line 6, ../sass/_panel.scss */
+/* line 10, ../sass/_panel.scss */
 .panel__layout {
   display: flex;
   flex: 1 1;
   align-items: center;
+  margin-right: 15px;
 }
 
-/* line 12, ../sass/_panel.scss */
+/* line 17, ../sass/_panel.scss */
 .panel-field {
   display: flex;
   flex-direction: column;
-  padding: 8px;
 }
-/* line 16, ../sass/_panel.scss */
+/* line 21, ../sass/_panel.scss */
 .panel-field--street {
   width: 100%;
 }
-/* line 19, ../sass/_panel.scss */
+/* line 24, ../sass/_panel.scss */
 .panel-field--number {
   width: 100px;
 }
 
-/* line 24, ../sass/_panel.scss */
+/* line 29, ../sass/_panel.scss */
 .panel-field__title {
   margin-bottom: 5px;
   color: #ffffff;
@@ -1415,22 +1421,18 @@ footer {
   line-height: 24px;
 }
 
-/* line 33, ../sass/_panel.scss */
+/* line 38, ../sass/_panel.scss */
 .panel-field__input {
   padding: 10px;
-  border: 1px solid transparent;
+  border: 2px solid transparent;
   border-radius: 3px;
   font-size: 14px;
 }
-/* line 38, ../sass/_panel.scss */
-.panel-field__input--active {
+/* line 43, ../sass/_panel.scss */
+.panel-field__input:hover,
+.panel-field__input :active,
+.panel-field__input :focus {
   border: 2px solid #f9b43b;
-}
-
-/* line 1, ../sass/_radio-button.scss */
-.radio-buttons {
-  display: flex;
-  margin-bottom: 20px;
 }
 
 /* line 6, ../sass/_radio-button.scss */
@@ -1439,7 +1441,6 @@ footer {
   position: relative;
   margin-right: 15px;
   align-items: center;
-  margin-bottom: 20px;
 }
 
 /* line 14, ../sass/_radio-button.scss */

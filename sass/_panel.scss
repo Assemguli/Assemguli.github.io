@@ -1,18 +1,23 @@
 .panel {
     display: flex;
     flex-direction: row;
+    margin-bottom: 15px;
+    &--radio-button{
+        margin-bottom: 30px;
+    }
 }
 
 .panel__layout {
     display: flex;
     flex: 1 1;
     align-items: center;
+    margin-right: 15px;
 }
 
 .panel-field {
     display: flex;
     flex-direction: column;
-    padding: 8px;
+    // padding: 8px;
     &--street {
         width: 100%;
     }
@@ -32,10 +37,14 @@
 
 .panel-field__input {
     padding: 10px;
-    border: 1px solid transparent;
+    border: 2px solid transparent;
     border-radius: 3px;
     font-size: 14px;
-    &--active {
-        border: 2px solid #f9b43b;
+    &:hover,
+    :active,
+    :focus{
+      border: 2px solid #f9b43b;
     }
 }
+
+// border: 2px solid #f9b43b;

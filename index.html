@@ -41,7 +41,7 @@
                                 </li>
                             </ul>
                         </nav>
-                        <a href="#delivery" class="btn header__order-btn">Заказать</a>
+                        <a href="#form" class="btn header__order-btn">Заказать</a>
                     </div>
                 </header>
                 <div class="first__content">
@@ -201,7 +201,7 @@
                                 <div class="types__price ">500</div>
                                 <div class="types__currency ">рублей</div>
                             </div>
-                            <a href="#delivery" class="btn header__order-btn ">Заказать</a>
+                            <a href="#form" class="btn header__order-btn ">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -291,7 +291,7 @@
                                 <div class="types__price ">500</div>
                                 <div class="types__currency ">рублей</div>
                             </div>
-                            <a href="#delivery" class="btn header__order-btn">Заказать</a>
+                            <a href="#form" class="btn header__order-btn">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -380,7 +380,7 @@
                                 <div class="types__price ">500</div>
                                 <div class="types__currency ">рублей</div>
                             </div>
-                            <a href="#delivery" class="btn header__order-btn ">Заказать</a>
+                            <a href="#form" class="btn header__order-btn ">Заказать</a>
                         </div>
                     </div>
                 </div>
@@ -668,10 +668,10 @@
                 </div>
             </div>
         </section>
-        <section class="section delivery" id="delivery">
+        <section class="section form" id="form">
             <h1 class="section-title ">Закажите доставку</h1>
-            <div class="container delivery__container ">
-                <div class="delivery-info__layout ">
+            <div class="container form__container ">
+                <div class="form-info__layout ">
                     <div class="panel ">
                         <div class="panel__layout ">
                             <div class="panel-field ">
@@ -679,17 +679,16 @@
                                 <input type="text " class="panel-field__input ">
                             </div>
                         </div>
-                        <div class="panel__layout ">
+                        <div class="panel__layout">
                             <div class="panel-field ">
                                 <div class="panel-field__title ">Телефон</div>
-                                <input type="text " placeholder="89212264923 "
-                                    class="panel-field__input panel-field__input--active ">
+                                <input type="text " placeholder="89212264923 " class="panel-field__input">
                             </div>
                         </div>
                     </div>
                     <div class="panel ">
-                        <div class="panel__layout ">
-                            <div class="panel-field panel-field--street ">
+                        <div class="panel__layout">
+                            <div class="panel-field panel-field--street">
                                 <div class="panel-field__title ">Улица</div>
                                 <input type="text " class="panel-field__input ">
                             </div>
@@ -722,33 +721,41 @@
                         </div>
                     </div>
                 </div>
-                <div class="delivery-info__layout ">
-                    <div class="delivery__order-preference ">
-                        <label class="delivery__order-comments ">
-                            <div class="delivery__order-title ">Комментарий</div>
-                            <textarea class="delivery__order-textarea " placeholder=" "></textarea>
+                <div class="form-info__layout ">
+                    <div class="panel">
+                        <label class="form__order-comments ">
+                            <div class="form__order-title ">Комментарий</div>
+                            <textarea class="form__order-textarea " placeholder=" "></textarea>
                         </label>
                     </div>
-                    <div class="radio-buttons ">
+                    <div class="panel panel--radio-button">
+                        <div class="panel__layout">
                         <label class="radio-button ">
-                            <input class="radio-button__input " type="radio " name="choice ">
+                            <input class="radio-button__input " type="radio" name="choice">
                             <div class="radio-button__fake "></div>
                             <div class="radio-button__title " checked=" ">Потребуется сдача</div>
                         </label>
+                    </div>
+                    <div class="panel__layout">
                         <label class="radio-button ">
-                            <input class="radio-button__input " type="radio " name="choice " checked=" ">
+                            <input class="radio-button__input " type="radio" name="choice" checked>
                             <div class="radio-button__fake "></div>
                             <div class="radio-button__title " checked=" ">Оплата по карте</div>
                         </label>
+                        </div>
                     </div>
-                    <label class="check ">
-                        <input class="check__input " type="checkbox " checked>
-                        <span class="check__box "></span>
-                        <span class="check__box-title ">Не перезванивать</span>
-                    </label>
-                    <div class="order ">
-                        <a href=" " class="btn order-btn ">Заказать</a>
-                        <button class="order__clear ">Очистить</button>
+                    <div class="panel">
+                        <label class="check ">
+                            <input class="check__input" type="checkbox" checked>
+                            <span class="check__box "></span>
+                            <span class="check__box-title ">Не перезванивать</span>
+                        </label>
+                    </div>
+                    <div class="panel">
+                        <div class="order ">
+                            <a href=" " class="btn order-btn ">Заказать</a>
+                            <button class="order__clear ">Очистить</button>
+                        </div>
                     </div>
                 </div>
             </div>
