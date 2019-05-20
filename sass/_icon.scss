@@ -17,7 +17,7 @@
     cursor: pointer;
     &:hover {
         opacity: 1;
-        transition: 0.3s;
+        transition: 0.2s;
     }
 }
 
@@ -33,7 +33,7 @@
 
 .icon__desc {
     color: #ffffff;
-    font-family: Gagalin;
+    font-family: 'Gagalin';
     font-size: 14px;
     font-weight: 400;
     &--quantity {

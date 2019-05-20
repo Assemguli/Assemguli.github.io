@@ -541,7 +541,7 @@ footer {
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
-  font-family: "Ubuntu Light";
+  font-family: 'Ubuntu Light';
   font-weight: 300;
   padding: 4px 4px 2px;
 }
@@ -554,7 +554,7 @@ footer {
 /* line 130, ../sass/_helpers.scss */
 .footer__phone-number {
   color: #e45028;
-  font-family: "Ubuntu - Bold";
+  font-family: 'Ubuntu - Bold';
   font-weight: 700;
   text-decoration: none;
 }
@@ -856,7 +856,7 @@ footer {
 /* line 24, ../sass/_types.scss */
 .types__desc {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   min-width: 441px;
@@ -866,7 +866,7 @@ footer {
 .types__price {
   display: flex;
   color: #e35028;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-weight: 400;
   font-size: 72px;
   padding: 8px 0;
@@ -876,7 +876,7 @@ footer {
 .types__currency {
   display: flex;
   color: #e35028;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-weight: 400;
   font-size: 30px;
   padding: 8px;
@@ -917,7 +917,7 @@ footer {
 /* line 18, ../sass/_icon.scss */
 .icon__food:hover {
   opacity: 1;
-  transition: 0.3s;
+  transition: 0.2s;
 }
 
 /* line 24, ../sass/_icon.scss */
@@ -934,7 +934,7 @@ footer {
 /* line 34, ../sass/_icon.scss */
 .icon__desc {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-size: 14px;
   font-weight: 400;
 }
@@ -1057,7 +1057,7 @@ footer {
   writing-mode: vertical-rl;
   text-orientation: mixed;
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-size: 40px;
   font-weight: 400;
   white-space: nowrap;
@@ -1079,7 +1079,7 @@ footer {
   padding: 2rem;
   background-color: #2f3234;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1135,7 +1135,7 @@ footer {
 /* line 39, ../sass/_team.scss */
 .team__title {
   color: #ffffff;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-size: 14px;
   font-weight: 400;
   line-height: 2.008;
@@ -1197,7 +1197,7 @@ footer {
 .operator {
   display: flex;
   align-items: center;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   color: #ffffff;
@@ -1220,7 +1220,7 @@ footer {
 /* line 22, ../sass/_operator.scss */
 .operator__title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 700;
   margin-bottom: 15px;
@@ -1248,15 +1248,20 @@ footer {
 /* line 14, ../sass/_composition-table.scss */
 .composition__item {
   display: flex;
-  justify-content: space-between;
   align-items: center;
   padding: 8px;
+}
+
+/* line 20, ../sass/_composition-table.scss */
+.composition__icon {
+  width: 48px;
 }
 
 /* line 25, ../sass/_composition-table.scss */
 .composition__name {
   display: flex;
-  justify-content: flex-start;
+  flex: 1 1 auto;
+  padding: 0 20px 0;
 }
 
 /* line 1, ../sass/_more-read.scss */
@@ -1264,7 +1269,7 @@ footer {
   width: 460px;
   background-color: #ffffff;
   color: #2f3234;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1287,7 +1292,7 @@ footer {
 /* line 24, ../sass/_more-read.scss */
 .more-read__title {
   color: #2f3234;
-  font-family: Gagalin;
+  font-family: 'Gagalin';
   font-size: 14px;
   font-weight: 400;
   line-height: 28.11px;
@@ -1356,7 +1361,7 @@ footer {
 /* line 32, ../sass/_delivery.scss */
 .delivery__order-title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1404,7 +1409,7 @@ footer {
 .panel-field__title {
   margin-bottom: 5px;
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1449,7 +1454,7 @@ footer {
 /* line 22, ../sass/_radio-button.scss */
 .radio-button__title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1496,8 +1501,8 @@ footer {
 .order__clear {
   background: none;
   border: none;
-  color: #ffffff;
-  font-family: Ubuntu;
+  color: white;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;
@@ -1585,7 +1590,7 @@ footer {
 /* line 36, ../sass/_check.scss */
 .check__box-title {
   color: #ffffff;
-  font-family: Ubuntu;
+  font-family: 'Ubuntu';
   font-size: 14px;
   font-weight: 300;
   line-height: 24px;

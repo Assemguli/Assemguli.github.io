@@ -13,22 +13,21 @@
 
 .composition__item {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 8px;
 }
 
 .composition__icon{
-
+    width: 48px;
+    // height: 48px;
 }
 
 .composition__name {
     display: flex;
-    justify-content: flex-start;
-  
+    flex: 1 1 auto;
+    padding: 0 20px 0;
 }
 
 .composition__quantity{
-   
-
+  
 }
