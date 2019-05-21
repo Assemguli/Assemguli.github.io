@@ -4,19 +4,24 @@
 
 .feature__pic {
     display: flex;
-    margin-bottom: 10px;
+    margin-bottom: rem(30px);
     justify-content: center;
+}
+
+.feature__pic-img {
+    width: 100px;
+    height: 100px;
 }
 
 .feature__title {
     @include lifehack();
-    font-size: 24px;
+    font-size: rem(24px);
     font-weight: 500;
-    margin-bottom: 10px;
+    margin-bottom: rem(10px);
 }
 
 .feature__text {
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #2f3234;
 }

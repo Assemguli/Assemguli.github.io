@@ -1,20 +1,20 @@
 // .radio-buttons {
 //     display: flex;
-//     margin-bottom: 20px;
+//     margin-bottom: rem(20px);
 // }
 
 .radio-button {
     display: flex;
     position: relative;
-    margin-right: 15px;
+    margin-right: rem(15px);
     align-items: center;
-    // margin-bottom: 20px;
+    // margin-bottom: rem(20px);
 }
 
 .radio-button__input {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: rem(1px);
+    height: rem(1px);
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
@@ -22,49 +22,49 @@
 .radio-button__title {
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
 }
 
 .radio-button__fake {
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     border: 1px solid #c9c9c9;
     background: #fff;
     border-radius: 50%;
     position: relative;
-    margin-right: 10px;
+    margin-right: rem(10px);
     // &--square {
     // }
 }
 
 // .radio-button__fake-square {
-//     width: 18px;
-//     height: 18px;
+//     width: rem(18px);
+//     height: rem(18px);
 //     border: 1px solid #c9c9c9;
 //     background: #fff;
 //     border-radius: 50%;
 //     position: relative;
-//     margin-right: 5px;
+//     margin-right: rem(5px);
 //     border-radius: 0;
 // }
 // .radio-button__fake-square:before {
 //     content: "✓";
 //     content: "✓";
-//     width: 0px;
-//     height: 0px;
+//     width: rem(0px);
+//     height: rem(0px);
 //     display: block;
 //     color: #e35028;
 //     position: absolute;
 //     left: 20%;
-//     top: -3px;
+//     top: rem(-3px);
 //     transition: 0.3s;
 // }
 .radio-button__fake::before {
     content: "";
-    width: 0px;
-    height: 0px;
+    width: rem(0px);
+    height: rem(0px);
     display: block;
     border-radius: 50%;
     background: #e35028;
@@ -80,6 +80,6 @@
 }
 
 .radio-button__input:checked+.radio-button__fake::before {
-    width: 8px;
-    height: 8px;
+    width: rem(8px);
+    height: rem(8px);
 }

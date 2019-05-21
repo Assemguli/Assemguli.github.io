@@ -1,7 +1,7 @@
 .section-title {
-    font-size: 72px;
+    font-size: rem(72px);
     @include gagalin();
-    margin-bottom: 45px;
+    margin-bottom: rem(45px);
     line-height: 1;
     color: $yellow;
     &--color-black {
@@ -15,7 +15,7 @@
     }
     &--menu {
         margin-bottom: 0;
-        padding: 100px;
+        padding: rem(100px);
         color: #fff;
     }
     &--team {

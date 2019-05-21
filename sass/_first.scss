@@ -1,21 +1,80 @@
 .first {
     background: url('../img/video-bg.png') center center / cover no-repeat;
-    position: relative;
+    display: flex;
+    @include tablets {
+        padding-bottom: rem(100px);
+        height: 100%;
+      }
 }
 
 .first__container {
-    justify-content: flex-start;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 15%;
+    // @include tablets {
+    //   height: rem(650px);
+    // }
 }
 
 .first__content {
-    flex: .8;
     display: flex;
-    align-items: center;
+    @include tablets {
+      flex-direction: column;
+      padding: 0 15%;
+    }
 }
 
+.first__content-left,
+.first__content-right{
+    float: left;
+    width: 50%;
+    @include tablets {
+      float: none;
+      width: 100%;
+    }
+}
+
+.first__content-left{
+    @include phones {
+        height: rem(230px);
+      }
+}
+
+.first__content-img {
+  display: inline-block;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  max-width: 100%;
+  max-height: 100%;
+
+  @include tablets {
+    max-width: 80%;
+  }
+}
+
+.first__content-right{
+    padding-top: rem(115px);
+    @include tablets {
+      text-align: center;
+      padding-top: 0;
+      // padding: rem(30px) 20% 0;
+    }
+    @include phones {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0 3%;
+    }
+}
+
+
 .first__desc {
-    font-size: 65px;
-    @include lifehack;
-    line-height: 1;
-    color: #fff;
+  font-size: rem(65px);
+  color: white;
+  @include lifehack;
+  text-transform: lowercase;
+  line-height: 1em;
 }

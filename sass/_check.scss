@@ -5,13 +5,13 @@
 
 .check {
     padding-left: 1.2em;
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
 }
 
 .check__input {
     position: absolute;
-    width: 1px;
-    height: 1px;
+    width: rem(1px);
+    height: rem(1px);
     overflow: hidden;
     clip: rect(0 0 0 0);
 }
@@ -20,8 +20,8 @@
     position: absolute;
     margin-top: 0.2em;
     margin-left: -1em;
-    width: 18px;
-    height: 18px;
+    width: rem(18px);
+    height: rem(18px);
     overflow: hidden;
     background-repeat: no-repeat;
     background-position: 50% 50%;
@@ -36,8 +36,8 @@
 .check__box-title {
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
-    margin-left: 10px;
+    line-height: rem(24px);
+    margin-left: rem(10px);
 }

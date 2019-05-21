@@ -21,12 +21,19 @@
     right: 0;
     bottom: 0;
     background: rgba(#000, .8);
-    padding: 45px 5% 10px;
+    padding: rem(45px) 5% rem(10px);
     color: #fff;
     opacity: 0;
     transition: opacity .3s;
 }
 
 .review__text {
-    margin-bottom: 20px;
+    margin-bottom: rem(20px);
+    font-size: rem(14px);
 }
+.review-btn{
+    width: 15%;
+    padding: rem(8px);
+    min-width: rem(85px);
+}
+

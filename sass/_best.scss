@@ -1,5 +1,7 @@
 .best {
     background: url('../img/bg-best.png') center center / cover no-repeat;
+    display: flex;
+    align-items: center;
 }
 
 .best__list {
@@ -8,7 +10,7 @@
 
 .best__item {
     flex: 1;
-    margin-right: 10px;
+    margin-right: rem(10px);
     &:last-child {
         margin-right: 0;
     }

@@ -8,8 +8,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 90px;
-    height: 90px;
+    width: rem(90px);
+    height: rem(90px);
     background-color: #e35028;
     opacity: 0.4;
     border-radius: 5px;
@@ -26,15 +26,15 @@
     align-items: center;
     justify-content: center;
     position: relative;
-    width: 60px;
-    height: 60px;
+    width: rem(60px);
+    height: rem(60px);
     opacity: 0.5;
 }
 
 .icon__desc {
     color: #ffffff;
     font-family: 'Gagalin';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 400;
     &--quantity {
         position: absolute;

@@ -2,29 +2,29 @@
     display: flex;
     align-items: center;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
     color: #ffffff;
-    margin-bottom: 35px;
+    margin-bottom: rem(35px);
 }
 
 .operator__ava-img {
-    width: 100px;
-    height: 100px;
+    width: rem(100px);
+    height: rem(100px);
     border-radius: 50%;
-    margin-right: 20px;
+    margin-right: rem(20px);
 }
 
 .operator__info {
-    width: 208px;
+    width: rem(208px);
 }
 
 .operator__title {
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 700;
-    margin-bottom: 15px;
+    margin-bottom: rem(15px);
 }
 
 .operator__sub-title {

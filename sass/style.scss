@@ -1,14 +1,31 @@
+//colors
 $orange: #e45028;
 $yellow: #f9b43b;
 $black: #2f3234;
 $red: #e35028;
+
+//breakpoints
+$phones: 480px;
+$tablets: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+
+//normalize
 @import "normalize";
-@import "main";
+
+
+// @import "main";
+
+//setups
 @import "fonts";
-@import "helpers";
 @import "mixins";
+@import "layouts";
+
+
+//blocks
 @import "header";
 @import "first";
+@import "logo";
 @import "button";
 @import "nav";
 @import "section-title";
@@ -32,3 +49,5 @@ $red: #e35028;
 @import "map";
 @import "social-list";
 @import "check";
+@import "hamburger-menu";
+@import "hamburger-menu-link";

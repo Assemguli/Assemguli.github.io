@@ -9,7 +9,7 @@
 
 .form__container {
     align-items: baseline;
-    width: 940px;
+    width: rem(940px);
     margin: 0 auto;
     display: flex;
     flex-direction: row;
@@ -21,25 +21,25 @@
     display: flex;
     flex-direction: column;
     width: 50%;
-    margin: 5px;
+    margin: rem(5px);
 }
 
 // .form__order-preference {
-//     margin-bottom: 20px;
+//     margin-bottom: rem(20px);
 // }
 
 .form__order-title {
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
-    margin-bottom: 5px;
+    line-height: rem(24px);
+    margin-bottom: rem(5px);
 }
 
 .form__order-textarea {
-    height: 109px;
-    width: 460px;
+    height: rem(109px);
+    width: rem(460px);
     resize: none;
     border: 2px solid #d1cfcb;
     background-color: #ffffff;

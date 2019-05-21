@@ -60,7 +60,7 @@
 
 .menu__about {
     display: flex;
-    width: 80px;
+    width: rem(80px);
     flex-flow: row nowrap;
     align-items: stretch;
     justify-content: flex-start;
@@ -106,10 +106,10 @@
     text-orientation: mixed;
     color: #ffffff;
     font-family: 'Gagalin';
-    font-size: 40px;
+    font-size: rem(40px);
     font-weight: 400;
     white-space: nowrap;
-    width: 80px;
+    width: rem(80px);
     &:hover{
         color: #f9b43b;
     }
@@ -126,9 +126,9 @@
     background-color: #2f3234;
     color: #ffffff;
     font-family: 'Ubuntu';
-    font-size: 14px;
+    font-size: rem(14px);
     font-weight: 300;
-    line-height: 24px;
+    line-height: rem(24px);
     &:visited+.menu__about-header{
         color: #f9b43b;
     }

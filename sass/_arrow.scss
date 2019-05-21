@@ -1,18 +1,41 @@
-.arrow {
-    cursor: pointer;
+.down-arrow {
+    position: absolute;
+    bottom: rem(20px);
+    left: 50%;
+    width: rem(60px);
+    transform: translateX(-50%);
+    transition: .3s;
+    height: rem(60px);
     display: flex;
+    align-items: center;
+    justify-content: center;
+    @include phones {
+        bottom: rem(-90px);
+    }
+    @include tablets {
+    bottom: rem(-90px);
+}
+    &:hover {
+        .down-arrow__icon {
+            margin-top: rem(-15px);
+            width: rem(45px);
+            height: rem(45px);
+        }
+    }
 }
 
-.arrow__down {
-    position: absolute;
-    left: 49%;
-    bottom: -70px;
+.down-arrow__icon {
+    width: rem(40px);
+    height: rem(40px);
+    transition: .3s;
+    fill: #fff;
 }
 
 .arrow__left {
-align-items: center;
+    align-items: center;
 }
+
 .arrow__right {
-align-items: center;
+    align-items: center;
     transform: rotate(180deg);
 }

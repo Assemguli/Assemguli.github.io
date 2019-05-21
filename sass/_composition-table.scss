@@ -1,9 +1,9 @@
 .composition {
-    min-width: 250px;
+    min-width: rem(250px);
     background-color: #ffffff;
     opacity: 0.9;
-    border-radius: 5px;
-    padding: 20px;
+    border-radius: rem(5px);
+    padding: rem(20px);
     top: 0;
     left: 100%;
     display: none;
@@ -14,18 +14,18 @@
 .composition__item {
     display: flex;
     align-items: center;
-    padding: 8px;
+    padding: rem(8px);
 }
 
 .composition__icon{
-    width: 48px;
-    // height: 48px;
+    width: rem(48px);
+    // height: rem(48px);
 }
 
 .composition__name {
     display: flex;
     flex: 1 1 auto;
-    padding: 0 20px 0;
+    padding: 0 rem(20px) 0;
 }
 
 .composition__quantity{
