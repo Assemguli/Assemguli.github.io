@@ -11,4 +11,8 @@
 .reviews__item {
     width: 25%;
     height: 50%;
+    @include tablets {
+        width: 50%;
+        height: 25%;
+    }
 }

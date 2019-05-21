@@ -1,32 +1,31 @@
 .form {
-    background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-}
-
-.form__container {
-    align-items: baseline;
-    width: rem(940px);
-    margin: 0 auto;
     display: flex;
     flex-direction: row;
-    height: 50%;
-    justify-content: center;
+    width: 100%;
+    margin: 0 auto;
+    
+    @include tablets {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 95%;
+    }
+
+    @include phones {
+        padding: 0;
+    }
 }
 
-.form-info__layout {
+.form__info-layout {
     display: flex;
     flex-direction: column;
     width: 50%;
     margin: rem(5px);
+    @include tablets{
+        width: 100%;
+        margin: 0;
+    }
 }
-
-// .form__order-preference {
-//     margin-bottom: rem(20px);
-// }
 
 .form__order-title {
     color: #ffffff;
@@ -37,16 +36,25 @@
     margin-bottom: rem(5px);
 }
 
+.form__order-comments {
+    @include tablets{
+        width: 100%;
+        margin-right: 0.9375rem;
+    }
+}
 .form__order-textarea {
     height: rem(109px);
-    width: rem(460px);
+    min-width: rem(460px);
     resize: none;
     border: 2px solid #d1cfcb;
     background-color: #ffffff;
     border-radius: 5px;
     &:hover,
     :active,
-    :focus{
-      border: 2px solid #f9b43b;
+    :focus {
+        border: 2px solid #f9b43b;
+    }
+    @include tablets{
+        width: 100%;
     }
 }

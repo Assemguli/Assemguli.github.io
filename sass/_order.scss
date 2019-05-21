@@ -1,4 +1,13 @@
 .order {
+    background: linear-gradient(rgba(47, 57, 52, 0.9), rgba(47, 50, 52, 0.9)), url(../img/bg-texture-dostavka.png) center center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    .section__title {
+      text-align: center;
+    }
+  }
+  
+.order-button{
     display: flex;
 }
 
