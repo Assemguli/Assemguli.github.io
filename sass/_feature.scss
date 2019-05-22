@@ -1,5 +1,9 @@
 .feature__desc {
     text-align: center;
+    @include phones{
+        text-align: left;
+        padding: 0 0 0 rem(20px) ;
+    }
 }
 
 .feature__pic {
@@ -9,8 +13,8 @@
 }
 
 .feature__pic-img {
-    width: 100px;
-    height: 100px;
+    width: rem(90px);
+    height: rem(90px);
 }
 
 .feature__title {

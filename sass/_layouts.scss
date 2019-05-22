@@ -31,7 +31,7 @@ body {
     width: 95%;
     display: flex;
     flex-direction: column;
-    align-items: center; //in order
+    // align-items: center; 
  }
 
 .wrapper {
@@ -81,11 +81,15 @@ p {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: center;
 }
 
 .slider-content{
     display: flex;
     flex-direction: row;
+    @include tablets{
+    flex-direction: column;
+    }
 }
 
 .active-slide {
@@ -114,6 +118,14 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    @include tablets{
+        width: rem(768px);
+    }
+    @include phones{
+        display: flex;
+    flex-direction: column;
+    align-items: center;
+    }
 }
 
 // .footer__container-content {
@@ -127,6 +139,9 @@ footer {
 .footer__layout {
     display: flex;
     flex-direction: column;
+    @include phones{
+        align-items: center;
+    }
 }
 
 .footer__address {

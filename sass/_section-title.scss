@@ -4,22 +4,27 @@
     margin-bottom: rem(45px);
     line-height: 1;
     color: $yellow;
-    text-align: center;
+    text-align: start;
     &--color-black {
         color: #000;
+        margin-bottom: rem(85px);
     }
     &--centered {
         text-align: center;
     }
-    &--color-white {
+    &--white {
         color: #fff;
     }
     &--menu {
-        margin-bottom: 0;
-        padding: rem(100px);
+        padding: rem(80px) 0;
         color: #fff;
     }
-    &--team {
-        text-align: left;
+ 
+    @include tablets{
+        text-align: center;
     }
+    // @include phones{
+    //     font-size: rem(50px);
+    // }
+
 }

@@ -27,6 +27,9 @@
     @include tablets{
         width: 100%;
     }
+    @include phones{
+        width: 9.375rem;
+    }
     &--street {
         width: 100%;
     }

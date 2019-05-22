@@ -30,13 +30,38 @@
     }
 }
 
+.review__title{
+    @include phones{
+        font-family: "Gagalin";
+        font-size: rem(24px);
+        text-align: center;
+        padding: rem(20px);
+    }
+}
+
 .review__text {
     margin-bottom: rem(20px);
     font-size: rem(14px);
+    @include phones{
+        display: none;
+    }
 }
 .review-btn{
     width: 15%;
     padding: rem(8px);
     min-width: rem(85px);
+        @include phones{
+        display: none;
+        margin: rem(20px);
+    }
+}
+
+.review-btn-second{
+    width: 15%;
+    padding: rem(8px);
+    min-width: rem(85px);
+    @include phones{
+        margin: rem(20px);
+    }
 }
 

@@ -6,12 +6,20 @@
 
 .best__list {
     display: flex;
+    margin-bottom: rem(55px);
+    @include phones{
+        flex-direction: column;
+    }
 }
 
 .best__item {
+    display: flex;
+    flex-direction: column;
     flex: 1;
-    margin-right: rem(10px);
-    &:last-child {
-        margin-right: 0;
+    // padding: 0 20px;
+    margin-bottom: 20px;
+    @include phones{
+        display: flex;
+        flex-direction: row;
     }
 }

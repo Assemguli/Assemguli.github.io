@@ -18,14 +18,14 @@
 }
 
 .composition__icon{
-    width: rem(48px);
+    width: rem(40px);
     // height: rem(48px);
 }
 
 .composition__name {
     display: flex;
     flex: 1 1 auto;
-    padding: 0 rem(20px) 0;
+    padding: 0 0 0 rem(20px);
 }
 
 .composition__quantity{

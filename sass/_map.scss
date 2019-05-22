@@ -1,6 +1,28 @@
 .map {
     background: url(../img/mapbg.png) center center/cover no-repeat;
     display: flex;
+    position: relative;
+}
+
+.map__marker {
+    position: absolute;
+    top: 19%;
+    left: 48%;
+
+    &--second {
+        top: 35%;
+        left: 59%;
+    }
+
+    &--third {
+        top: 71%;
+        left: 46%;
+    }
+
+    &--fourth {
+        top: 54%;
+        left: 76%;
+    }
 }
 
 // .map__container {
