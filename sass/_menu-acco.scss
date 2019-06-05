@@ -8,7 +8,7 @@
     display: flex;
     flex-flow: row nowrap;
     align-items: stretch;
-    justify-content: flex-start;
+    justify-content: space-between;
     overflow-x: hidden;
     overflow-y: auto;
     flex: 1 1 auto;
@@ -42,51 +42,12 @@
     overflow-y: auto;
     flex: 0 0 auto;
     box-sizing: border-box;
-    padding: 0;
+    // padding: 0;
     margin: 0;
     font-size: 1rem;
 }
 
-.menu__about {
-    display: flex;
-    width: 80px;
-    flex-flow: row nowrap;
-    align-items: stretch;
-    justify-content: flex-start;
-    overflow: hidden;
-    flex: 1 1 auto;
-    box-sizing: border-box;
-    padding: 0;
-    margin: 0;
-    font-size: 1rem;
-    transition: width 0.35s ease-in-out;
-
-    &--meat {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
-    }
-
-    &--vegetarian {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
-    }
-
-    &--dietary {
-        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
-    }
-
-    @include phones {
-        width: 53px;
-    }
-}
-
-.menu__about:hover {
-    width: 30rem;
-}
-
-.menu__about:hover .menu__about-body {
-    display: flex;
-}
-
-.menu__about-header {
+.menu__title {
     display: flex;
     flex-flow: row nowrap;
     align-items: center;
@@ -104,23 +65,33 @@
     white-space: nowrap;
     width: 80px;
 
-    @include phones {
-        width: 53px;
+    &--meat {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)),
+            url(../img/menu-meet-food.png) center center/cover no-repeat;
     }
 
-    &:hover{
-        color: #f9b43b;
+    &--vegetarian {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
+    }
+
+    &--dietary {
+        background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
+    }
+
+    @include phones {
+        width: 40px;
+        font-size: 20px;
     }
 }
 
-.menu__about-body {
+.menu__body {
     display: none;
     flex-flow: row nowrap;
     align-items: flex-start;
     justify-content: flex-start;
     flex: 1 1 auto;
     box-sizing: border-box;
-    padding: 2rem;
+    padding: 1rem;
     background-color: #2f3234;
     color: #ffffff;
     font-family: Ubuntu;
@@ -128,12 +99,15 @@
     font-weight: 300;
     line-height: 24px;
 
-    &:visited+.menu__about-header{
-        color: #f9b43b;
-    }
-    @include phones {
-        padding: 2rem 10rem 1rem 1rem;
-        font-size: 12px;
-        text-align: center;
+    &--active {
+        display: flex;
+        width: 30rem;
+        @include phones{
+            width: rem(200px);
+            padding: rem(36px) rem(20px);
+            font-size: 12px;
+            overflow: hidden;
+            text-align: center;
+        }
     }
 }

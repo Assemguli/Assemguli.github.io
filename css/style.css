@@ -903,8 +903,14 @@ footer {
 }
 /* line 18, ../sass/_section-title.scss */
 .section-title--menu {
-  padding: 5rem 0;
+  padding: 5rem;
   color: #fff;
+}
+@media screen and (max-width: 480px) {
+  /* line 18, ../sass/_section-title.scss */
+  .section-title--menu {
+    display: none;
+  }
 }
 @media screen and (max-width: 768px) {
   /* line 1, ../sass/_section-title.scss */
@@ -1313,23 +1319,6 @@ footer {
   transform: translate(-50%, -50%);
 }
 
-/* line 1, ../sass/_menu.scss */
-.menu {
-  background: url("../img/menu-burgers.png");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: relative;
-}
-
-/* line 7, ../sass/_menu.scss */
-.menu__title {
-  position: absolute;
-  top: 10%;
-  left: 10%;
-  color: #fff;
-}
-
 /* line 1, ../sass/_menu-acco.scss */
 .menu {
   display: flex;
@@ -1342,7 +1331,7 @@ footer {
   display: flex;
   flex-flow: row nowrap;
   align-items: stretch;
-  justify-content: flex-start;
+  justify-content: space-between;
   overflow-x: hidden;
   overflow-y: auto;
   flex: 1 1 auto;
@@ -1378,57 +1367,12 @@ footer {
   overflow-y: auto;
   flex: 0 0 auto;
   box-sizing: border-box;
-  padding: 0;
   margin: 0;
   font-size: 1rem;
 }
 
 /* line 50, ../sass/_menu-acco.scss */
-.menu__about {
-  display: flex;
-  width: 80px;
-  flex-flow: row nowrap;
-  align-items: stretch;
-  justify-content: flex-start;
-  overflow: hidden;
-  flex: 1 1 auto;
-  box-sizing: border-box;
-  padding: 0;
-  margin: 0;
-  font-size: 1rem;
-  transition: width 0.35s ease-in-out;
-}
-/* line 64, ../sass/_menu-acco.scss */
-.menu__about--meat {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
-}
-/* line 68, ../sass/_menu-acco.scss */
-.menu__about--vegetarian {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
-}
-/* line 72, ../sass/_menu-acco.scss */
-.menu__about--dietary {
-  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
-}
-@media screen and (max-width: 480px) {
-  /* line 50, ../sass/_menu-acco.scss */
-  .menu__about {
-    width: 53px;
-  }
-}
-
-/* line 81, ../sass/_menu-acco.scss */
-.menu__about:hover {
-  width: 30rem;
-}
-
-/* line 85, ../sass/_menu-acco.scss */
-.menu__about:hover .menu__about-body {
-  display: flex;
-}
-
-/* line 89, ../sass/_menu-acco.scss */
-.menu__about-header {
+.menu__title {
   display: flex;
   flex-flow: row nowrap;
   align-items: center;
@@ -1446,26 +1390,35 @@ footer {
   white-space: nowrap;
   width: 80px;
 }
+/* line 68, ../sass/_menu-acco.scss */
+.menu__title--meat {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-meet-food.png) center center/cover no-repeat;
+}
+/* line 73, ../sass/_menu-acco.scss */
+.menu__title--vegetarian {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-vegetible-food.png) center center/cover no-repeat;
+}
+/* line 77, ../sass/_menu-acco.scss */
+.menu__title--dietary {
+  background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
+}
 @media screen and (max-width: 480px) {
-  /* line 89, ../sass/_menu-acco.scss */
-  .menu__about-header {
-    width: 53px;
+  /* line 50, ../sass/_menu-acco.scss */
+  .menu__title {
+    width: 40px;
+    font-size: 20px;
   }
 }
-/* line 111, ../sass/_menu-acco.scss */
-.menu__about-header:hover {
-  color: #f9b43b;
-}
 
-/* line 116, ../sass/_menu-acco.scss */
-.menu__about-body {
+/* line 87, ../sass/_menu-acco.scss */
+.menu__body {
   display: none;
   flex-flow: row nowrap;
   align-items: flex-start;
   justify-content: flex-start;
   flex: 1 1 auto;
   box-sizing: border-box;
-  padding: 2rem;
+  padding: 1rem;
   background-color: #2f3234;
   color: #ffffff;
   font-family: Ubuntu;
@@ -1473,15 +1426,18 @@ footer {
   font-weight: 300;
   line-height: 24px;
 }
-/* line 131, ../sass/_menu-acco.scss */
-.menu__about-body:visited + .menu__about-header {
-  color: #f9b43b;
+/* line 102, ../sass/_menu-acco.scss */
+.menu__body--active {
+  display: flex;
+  width: 30rem;
 }
 @media screen and (max-width: 480px) {
-  /* line 116, ../sass/_menu-acco.scss */
-  .menu__about-body {
-    padding: 2rem 10rem 1rem 1rem;
+  /* line 102, ../sass/_menu-acco.scss */
+  .menu__body--active {
+    width: 12.5rem;
+    padding: 2.25rem 1.25rem;
     font-size: 12px;
+    overflow: hidden;
     text-align: center;
   }
 }
