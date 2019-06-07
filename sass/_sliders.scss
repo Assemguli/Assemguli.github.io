@@ -1,9 +1,10 @@
 .sliders {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-
+    // align-items: center;
+    // justify-content: center;
+    margin-top: 100px;
+    padding: 2rem;
 
     &__item {
         width: rem(12px);

@@ -7,7 +7,8 @@
 .best__list {
     display: flex;
     margin-bottom: rem(55px);
-    @include phones{
+
+    @include phones {
         flex-direction: column;
     }
 }
@@ -17,7 +18,8 @@
     flex-direction: column;
     flex: 1;
     margin-bottom: 20px;
-    @include phones{
+
+    @include phones {
         display: flex;
         flex-direction: row;
     }

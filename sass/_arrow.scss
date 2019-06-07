@@ -9,12 +9,15 @@
     display: flex;
     align-items: center;
     justify-content: center;
+
     @include phones {
         bottom: rem(-90px);
     }
+
     @include tablets {
-    bottom: rem(-90px);
-}
+        bottom: rem(-90px);
+    }
+
     &:hover {
         .down-arrow__icon {
             margin-top: rem(-15px);

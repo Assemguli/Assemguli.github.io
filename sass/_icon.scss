@@ -15,6 +15,7 @@
     border-radius: 5px;
     position: relative;
     cursor: pointer;
+
     &:hover {
         opacity: 1;
         transition: 0.2s;
@@ -36,6 +37,7 @@
     font-family: 'Gagalin';
     font-size: rem(14px);
     font-weight: 400;
+
     &--quantity {
         position: absolute;
         top: 50%;
@@ -43,4 +45,3 @@
         transform: translate(-50%, -50%);
     }
 }
-

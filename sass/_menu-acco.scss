@@ -77,10 +77,17 @@
     &--dietary {
         background: linear-gradient(rgba(17, 17, 17, 0.7), rgba(17, 17, 17, 0.7)), url(../img/menu-diet-food.png) center center/cover no-repeat;
     }
+
+    &:hover,
+    &:visited {
+        color: #f9b43b;
+    }
+
     @include tablets {
         width: 53px;
         font-size: 30px;
     }
+
     @include phones {
         width: 40px;
         font-size: 20px;
@@ -105,14 +112,16 @@
     &--active {
         display: flex;
         width: 30rem;
-        @include tablets{
+
+        @include tablets {
             width: rem(400px);
             padding: rem(28px) rem(24px);
             font-size: 14px;
             overflow: hidden;
             text-align: center;
         }
-        @include phones{
+
+        @include phones {
             width: rem(190px);
             padding: rem(36px) rem(20px);
             font-size: 12px;

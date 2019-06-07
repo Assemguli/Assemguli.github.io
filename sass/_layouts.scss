@@ -5,10 +5,11 @@ html {
         font-size: 15px;
     }
 
-    @include phones{
+    @include phones {
         font-size: 14px;
     }
 }
+
 html,
 body {
     height: 100%;
@@ -31,13 +32,11 @@ body {
     width: 95%;
     display: flex;
     flex-direction: column;
-    // align-items: center; 
- }
+}
 
 .wrapper {
     position: relative;
     width: 100%;
-    // max-width: rem(940px) + rem(20px);
     min-height: 100%;
     overflow: hidden;
 }
@@ -67,6 +66,7 @@ table {
 ul {
     padding: 0;
     margin: 0;
+
     &>li {
         list-style: none;
     }
@@ -84,11 +84,12 @@ p {
     justify-content: center;
 }
 
-.slider-content{
+.slider-content {
     display: flex;
     flex-direction: row;
-    @include tablets{
-    flex-direction: column;
+
+    @include tablets {
+        flex-direction: column;
     }
 }
 
@@ -100,7 +101,7 @@ p {
     display: none;
 }
 
-.rotate{
+.rotate {
     transform: rotate(180deg);
 }
 
@@ -115,21 +116,24 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    @include tablets{
+
+    @include tablets {
         width: rem(768px);
     }
-    @include phones{
+
+    @include phones {
         display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
+        flex-direction: column;
+        align-items: center;
+        width: fit-content;
     }
 }
 
 .footer__layout {
     display: flex;
     flex-direction: column;
-    @include phones{
+
+    @include phones {
         align-items: center;
     }
 }
@@ -158,6 +162,6 @@ footer {
     box-sizing: border-box;
 }
 
-.error{
+.error {
     color: red;
 }

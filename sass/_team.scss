@@ -4,7 +4,7 @@
         background: url(../img/team.png) center center/cover no-repeat;
         justify-content: flex-end;
     }
-    
+
     .team__content {
         width: 50%;
         background-color: rgba(47, 50, 52, 0.93);
@@ -12,6 +12,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+
         @include tablets {
             display: flex;
             width: 100%;
@@ -19,36 +20,41 @@
             align-items: center;
         }
     }
-    
+
     .team__list {
         margin: 0;
         padding: 0;
         list-style: none;
     }
-    
+
     .team__item {
         margin-top: rem(30px);
+
         @include tablets {
             text-align: center;
         }
+
         &--active {
             .team__title {
                 color: #f9b43b;
+
                 &::before {
                     border-top: none;
                     border-bottom: 5px solid $yellow;
                 }
             }
+
             .team__body {
                 display: flex;
-                @include tablets{
+
+                @include tablets {
                     flex-direction: column;
                     align-items: center;
                 }
             }
         }
     }
-    
+
     .team__title {
         color: #ffffff;
         font-family: 'Gagalin';
@@ -56,6 +62,7 @@
         font-weight: 400;
         line-height: 2.008;
         position: relative;
+
         &::before {
             content: "";
             display: block;
@@ -68,18 +75,18 @@
             top: rem(13px);
             left: rem(-20px);
         }
+
         @include tablets {
             display: inline-flex;
             font-size: rem(24px);
         }
     }
-    
+
     .team__body {
-        // display: flex;
         align-items: flex-start;
         display: none;
     }
-    
+
     .team__ava {
         background-image: url(../img/ava-operators.png);
         flex: 0 0 auto;
@@ -90,7 +97,7 @@
         border-radius: 50%;
         overflow: hidden;
     }
-    
+
     .team__box {
         font-size: rem(14px);
         line-height: 1.5;
@@ -98,15 +105,16 @@
         color: #ffffff;
         padding-left: rem(20px);
         max-width: rem(250px);
-        @include tablets{
+
+        @include tablets {
             padding: 0;
         }
     }
-    
+
     .team__work {
         font-weight: bold;
     }
-    
+
     .team__desc {
         margin: rem(23px) 0 0;
     }

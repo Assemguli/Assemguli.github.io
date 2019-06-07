@@ -1,8 +1,9 @@
 .feature__desc {
     text-align: center;
-    @include phones{
+
+    @include phones {
         text-align: left;
-        padding: 0 0 0 rem(20px) ;
+        padding: 0 0 0 rem(20px);
     }
 }
 
