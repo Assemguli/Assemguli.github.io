@@ -2,6 +2,7 @@
     background: url(../img/mapbg.png) center center/cover no-repeat;
     display: flex;
     position: relative;
+    align-items: flex-end;
 }
 
 .map__marker {
@@ -24,8 +25,3 @@
         left: 76%;
     }
 }
-
-// .map__container {
-//     width: rem(940px);
-//     margin: 0 auto;
-// }

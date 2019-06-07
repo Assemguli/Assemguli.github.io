@@ -18,8 +18,13 @@
     &--menu {
         padding: rem(80px);
         color: #fff;
+        @include tablets{
+            padding: rem(10px);
+            font-size: rem(50px);
+          }
         @include phones{
-          display: none;
+            padding: rem(5px);
+            font-size: rem(18px);
         }
     }
  

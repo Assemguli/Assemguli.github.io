@@ -1,10 +1,12 @@
 .review {
     position: relative;
     filter: grayscale(100%);
-
     &:hover {
         .review__hover {
             opacity: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
         }
     }
 }
@@ -33,9 +35,13 @@
 }
 
 .review__title {
+    font-family: "Gagalin";
+    text-transform: uppercase;
+    text-align: start;
+    font-size: rem(24px);
+
     @include phones {
         font-family: "Gagalin";
-        font-size: rem(24px);
         text-align: center;
         padding: rem(20px);
     }
@@ -44,6 +50,7 @@
 .review__text {
     margin-bottom: rem(20px);
     font-size: rem(14px);
+    line-height: rem(24px);
 
     @include phones {
         display: none;
@@ -51,25 +58,38 @@
 }
 
 .review-btn {
-    width: 15%;
-    padding: rem(8px);
-    min-width: rem(85px);
+    display: flex;
+    flex-direction: row;
+    white-space: nowrap;
+    font-size: 14px;
+    padding: rem(10px) rem(15px);
+    align-items: center;
+    justify-content: center;
     @include phones {
         display: none;
         margin: rem(20px);
     }
 }
 
-.review-btn:hover .more-read {
-    display: block;
-}
+// .review-btn:hover .more-read {
+//     display: block;
+// }
 
 .review-btn-second {
-    width: 15%;
-    padding: rem(8px);
-    min-width: rem(85px);
+    display: none;
+    // width: 15%;
+    // min-width: rem(85px);
+    @include tablets {
+        display: none;
+    }
 
     @include phones {
-        margin: rem(20px);
+        display: flex;
+        flex-direction: row;
+        white-space: nowrap;
+        font-size: 14px;
+        padding: rem(10px) rem(15px);
+        align-items: center;
+        justify-content: center;
     }
 }

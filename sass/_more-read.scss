@@ -13,6 +13,13 @@
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+
+    @include phones {
+        font-size: rem(14px);
+        line-height: rem(18px);
+        padding: rem(20px);
+        width: rem(300px);
+    }
 }
 
 .more-read__header {

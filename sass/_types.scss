@@ -32,6 +32,11 @@
 }
 
 .types__content-img {
+    width: rem(450px);
+    height: rem(300px);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     @include tablets {
         display: flex;
         justify-content: center;
@@ -39,8 +44,8 @@
 }
 
 .types__content-img-icon {
-    width: rem(450px);
-    height: rem(300px);
+    width: rem(430px);
+    height: rem(280px);
     // margin: rem(30px);
 }
 
