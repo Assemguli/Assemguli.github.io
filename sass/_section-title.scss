@@ -5,34 +5,36 @@
     line-height: 1;
     color: $yellow;
     text-align: start;
+
     &--color-black {
         color: #000;
         margin-bottom: rem(85px);
     }
+
     &--centered {
         text-align: center;
     }
+
     &--white {
         color: #fff;
     }
+
     &--menu {
         padding: rem(80px);
         color: #fff;
-        @include tablets{
+
+        @include tablets {
             padding: rem(10px);
             font-size: rem(50px);
-          }
-        @include phones{
+        }
+
+        @include phones {
             padding: rem(5px);
             font-size: rem(18px);
         }
     }
- 
-    @include tablets{
+
+    @include tablets {
         text-align: center;
     }
-    // @include phones{
-    //     font-size: rem(50px);
-    // }
-
 }

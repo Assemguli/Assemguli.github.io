@@ -23,8 +23,6 @@
 .types__content {
     display: flex;
 
-    // flex-direction: column;
-    // justify-content: space-between;
     @include tablets {
         display: flex;
         flex-direction: column;
@@ -37,6 +35,7 @@
     display: flex;
     justify-content: flex-start;
     align-items: center;
+
     @include tablets {
         display: flex;
         justify-content: center;
@@ -46,7 +45,6 @@
 .types__content-img-icon {
     width: rem(430px);
     height: rem(280px);
-    // margin: rem(30px);
 }
 
 .types__desc {
@@ -83,7 +81,8 @@
 .types__footer {
     display: flex;
     align-items: baseline;
-    @include tablets{
+
+    @include tablets {
         justify-content: center;
     }
 }

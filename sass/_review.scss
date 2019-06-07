@@ -1,6 +1,7 @@
 .review {
     position: relative;
     filter: grayscale(100%);
+
     &:hover {
         .review__hover {
             opacity: 1;
@@ -65,20 +66,17 @@
     padding: rem(10px) rem(15px);
     align-items: center;
     justify-content: center;
+
     @include phones {
         display: none;
         margin: rem(20px);
     }
 }
 
-// .review-btn:hover .more-read {
-//     display: block;
-// }
 
 .review-btn-second {
     display: none;
-    // width: 15%;
-    // min-width: rem(85px);
+
     @include tablets {
         display: none;
     }

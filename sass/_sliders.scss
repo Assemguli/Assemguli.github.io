@@ -1,0 +1,19 @@
+.sliders {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+
+    &__item {
+        width: rem(12px);
+        height: rem(12px);
+        border-radius: 50%;
+        background-color: #ccc;
+        margin: 8px;
+        &:hover {
+            background-color: #fff;
+        }
+    }
+
+}

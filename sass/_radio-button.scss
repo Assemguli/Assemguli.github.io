@@ -1,14 +1,9 @@
-// .radio-buttons {
-//     display: flex;
-//     margin-bottom: rem(20px);
-// }
 
 .radio-button {
     display: flex;
     position: relative;
     margin-right: rem(15px);
     align-items: center;
-    // margin-bottom: rem(20px);
 }
 
 .radio-button__input {
@@ -36,32 +31,8 @@
     border-radius: 50%;
     position: relative;
     margin-right: rem(10px);
-    // &--square {
-    // }
 }
 
-// .radio-button__fake-square {
-//     width: rem(18px);
-//     height: rem(18px);
-//     border: 1px solid #c9c9c9;
-//     background: #fff;
-//     border-radius: 50%;
-//     position: relative;
-//     margin-right: rem(5px);
-//     border-radius: 0;
-// }
-// .radio-button__fake-square:before {
-//     content: "✓";
-//     content: "✓";
-//     width: rem(0px);
-//     height: rem(0px);
-//     display: block;
-//     color: #e35028;
-//     position: absolute;
-//     left: 20%;
-//     top: rem(-3px);
-//     transition: 0.3s;
-// }
 .radio-button__fake::before {
     content: "";
     width: rem(0px);
