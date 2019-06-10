@@ -11,9 +11,26 @@
         background-color: #ccc;
         margin: 8px;
         position: relative;
-        
+
+        &--active {
+            &:after {
+                content: '';
+                display: inline-flex;
+                border: 2px solid #fff;
+                width: rem(18px);
+                height: rem(18px);
+                border-radius: 50%;
+                transition: 1s ease;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
         &:hover {
             background-color: #fff;
+
             &:after {
                 content: '';
                 display: inline-flex;
