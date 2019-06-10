@@ -2307,11 +2307,12 @@ footer {
 /* line 1, ../sass/_sliders.scss */
 .sliders {
   display: flex;
+  height: 100px;
   flex-direction: column;
   margin-top: 100px;
   padding: 2rem;
 }
-/* line 7, ../sass/_sliders.scss */
+/* line 8, ../sass/_sliders.scss */
 .sliders__item {
   width: 0.75rem;
   height: 0.75rem;
@@ -2320,11 +2321,11 @@ footer {
   margin: 8px;
   position: relative;
 }
-/* line 16, ../sass/_sliders.scss */
+/* line 17, ../sass/_sliders.scss */
 .sliders__item--active:after {
   content: '';
   display: inline-flex;
-  border: 2px solid #fff;
+  border: 2px solid #ccc;
   width: 1.125rem;
   height: 1.125rem;
   border-radius: 50%;
@@ -2334,11 +2335,11 @@ footer {
   left: 50%;
   transform: translate(-50%, -50%);
 }
-/* line 31, ../sass/_sliders.scss */
+/* line 32, ../sass/_sliders.scss */
 .sliders__item:hover {
   background-color: #fff;
 }
-/* line 34, ../sass/_sliders.scss */
+/* line 35, ../sass/_sliders.scss */
 .sliders__item:hover:after {
   content: '';
   display: inline-flex;
