@@ -12,7 +12,7 @@
 <body>
     <div class="wrapper">
         <div class="maincontent">
-            <section class="section first" id="first">
+            <section class="section first active" id="first">
                 <div class="container">
                     <header class="header">
                         <div class="header__logo">
@@ -29,31 +29,31 @@
                                 </a>
                                 <ul class="nav__list">
                                     <li class="nav__item">
-                                        <a href="#about" class="nav__link">О нас</a>
+                                        <a href="#" class="nav__link" data-scroll-to="1">О нас</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#burger" class="nav__link">Бургеры</a>
+                                        <a href="#" class="nav__link" data-scroll-to="2">Бургеры</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#team" class="nav__link">Команда</a>
+                                        <a href="#" class="nav__link" data-scroll-to="3">Команда</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#menu" class="nav__link">Меню</a>
+                                        <a href="#" class="nav__link" data-scroll-to="4">Меню</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#reviews" class="nav__link">Отзывы</a>
+                                        <a href="#" class="nav__link" data-scroll-to="5">Отзывы</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#working" class="nav__link">Как мы работаем</a>
+                                        <a href="#" class="nav__link" data-scroll-to="6">Как мы работаем</a>
                                     </li>
                                     <li class="nav__item">
-                                        <a href="#map" class="nav__link">Контакты</a>
+                                        <a href="#" class="nav__link" data-scroll-to="8">Контакты</a>
                                     </li>
                                 </ul>
                             </nav>
                         </div>
                         <div class="header__links">
-                            <a class="order__link btn" href="#order">Заказать</a>
+                            <a class="order__link btn" href="#" data-scroll-to="7">Заказать</a>
                             <a class="hamburger-menu-link js-toggle-menu" href="#hamburger-menu">
                                 <div class="hamburger-menu-link__bars"></div>
                             </a>
@@ -78,17 +78,32 @@
                         </svg>
                     </a>
                 </div>
-                <div class="sliders">
-                    <a href="#first" class="sliders__item sliders__item--active"></a>
-                    <a href="#about" class="sliders__item"></a>
-                    <a href="#burger" class="sliders__item"></a>
-                    <a href="#team" class="sliders__item"></a>
-                    <a href="#menu" class="sliders__item"></a>
-                    <a href="#reviews" class="sliders__item"></a>
-                    <a href="#working" class="sliders__item"></a>
-                    <a href="#order" class="sliders__item"></a>
-                    <a href="#map" class="sliders__item"></a>
-                </div>
+                <ul class="fixed-menu">
+                    <li class="fixed-menu__item active">
+                        <a class="fixed-menu__link" href="" data-scroll-to="0"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="1"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="2"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="3"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="4"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="5"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="6"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="7"></a>
+                    </li>
+                </ul>
             </section>
             <section class="section best" id="about">
                 <div class="container">
@@ -139,6 +154,32 @@
                         </li>
                     </ul>
                 </div>
+                <ul class="fixed-menu">
+                    <li class="fixed-menu__item active">
+                        <a class="fixed-menu__link" href="" data-scroll-to="0"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="1"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="2"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="3"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="4"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="5"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="6"></a>
+                    </li>
+                    <li class="fixed-menu__item">
+                        <a class="fixed-menu__link" href="" data-scroll-to="7"></a>
+                    </li>
+                </ul>
             </section>
             <section class="section types" id="burger">
                 <div class="container slider-container">
@@ -726,8 +767,40 @@
                         <img src="./img/Photo-video.png " alt="video working ">
                         <img src="./img/pleer.png " alt="video working ">
                     </div>
+
                 </div>
             </section>
+            <!-- <section class="section section-video">
+                        <div class="container">
+                            <h2 class="section-title section-title--color-black section-title--centered ">как мы
+                                работаем</h2>
+                            <section class="video">
+                                <div class="video__container">
+                                    <div class="video__player">
+                                        <video id="player" poster="./img/Photo7.png">
+                                            <source src="https://www.youtube.com/watch?v=usyz0nuotTA" type="video/mp4">
+                                        </video>
+                                        <img src="./img/play-white.png" alt="" class="video__player-img">
+                                    </div>
+                                    <div class="video__toolbar">
+                                        <div class="duration">
+                                            <img src="./img/duration-img.png" alt="" class="duration__img">
+                                            <div id="timer" class="duration__timer">00:01</div>
+                                            <input type="range" class="duration__length" id="durationLevel">
+                                        </div>
+                                        <div class="sound">
+                                            <img src="./img/Volum.png" class="sound__mic" id="mic" alt="">
+                                            <div class="sound__volume">
+                                                <input type="range" class="duration__length duration__length--other"
+                                                    id="micLevel" min="0" max="10">
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </section>
+                        </div>
+                    </section> -->
             <section class="section order" id="order">
                 <div class="container">
                     <div class="section-title section-title--centered">Закажите доставку</div>
@@ -857,7 +930,8 @@
                             C11,8.969,10.875,9.516,10.758,9.774z " />
                                     </g>
                                 </svg>
-                                <a href="tel:+78123771377 " class="footer__phone-number "> +7 (812) 377-13-77</a>
+                                <a href="tel:+78123771377 " class="footer__phone-number "> +7 (812)
+                                    377-13-77</a>
                             </div>
                         </div>
                         <div class="footer__layout ">
@@ -892,5 +966,6 @@
 <script src="./js/1-home-work-js.js"></script>
 <script src="./js/form.js"></script>
 <script src="./js/scroll-pages.js"></script>
+<script src="./js/mai.js"></script>
 
 </html>

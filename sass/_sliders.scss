@@ -1,49 +1,65 @@
-.sliders {
-    display: flex;
-    flex-direction: column;
-    margin-top: 100px;
-    padding: 2rem;
-    &__item {
-        width: rem(12px);
-        height: rem(12px);
-        border-radius: 50%;
-        background-color: #ccc;
-        margin: 8px;
-        position: relative;
+.fixed-menu {
+	position: fixed;
+	top: rem(90px);
+	right: rem(40px);
 
-        &--active {
-            &:after {
-                content: '';
-                display: inline-flex;
-                border: 2px solid #ccc;
-                width: rem(18px);
-                height: rem(18px);
-                border-radius: 50%;
-                transition: 1s ease;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
+	@include laptop {
+		display: none;
+	}
+}
 
-        &:hover {
-            background-color: #fff;
+.fixed-menu__link {
+	width: rem(16px);
+	height: rem(16px);
+	display: block;
+	position: relative;
 
-            &:after {
-                content: '';
-                display: inline-flex;
-                border: 2px solid #fff;
-                width: rem(18px);
-                height: rem(18px);
-                border-radius: 50%;
-                transition: 1s ease;
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-    }
+	&:after, &:before {
+		content: "";
+		display: block;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		border-radius: 50%;
+	}
 
+	&:after {
+		width: rem(6px);
+		height: rem(6px);
+		background: #fff;
+	}
+
+	&:before {
+		width: rem(0px);
+		height: rem(0px);
+		border-radius: 50%;
+		border: rem(1px) solid #fff;
+		opacity: 0;
+		transition: .3s;
+	}
+
+	&:hover {
+		&:before {
+			width: rem(14px);
+			height: rem(14px);
+			opacity: 1;
+		}
+	}
+}
+
+.fixed-menu__item {
+	&.active {
+		.fixed-menu__link {
+			&:before {
+				width: rem(14px);
+				height: rem(14px);
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.fixed-menu__item {
+	margin-bottom: rem(5px);
 }
