@@ -16,6 +16,9 @@
       opacity: 0;
       transition: opacity .3s;
     }
+    @include phones{
+      width: 320px;
+    }
   }
   
   .player__splash {
@@ -86,6 +89,9 @@
     background: #626262;
     top: 15px;
     left: 50px;
+    @include phones{
+      width: 180px;
+    }
   }
   
   .player__playback-button {
@@ -107,6 +113,9 @@
     right: 20px;
     color: #626262;
     font-weight: bold;
+    @include phones{
+      right: 8px;
+    }
   }
 
 

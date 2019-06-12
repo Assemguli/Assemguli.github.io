@@ -940,7 +940,8 @@ footer {
 @media screen and (max-width: 480px) {
   /* line 26, ../sass/_section-title.scss */
   .section-title--menu {
-    display: none;
+    padding: 0.5rem;
+    font-size: 1.125rem;
   }
 }
 
@@ -1524,8 +1525,8 @@ footer {
   /* line 112, ../sass/_menu-acco.scss */
   .menu__body--active {
     width: 10.625rem;
-    padding: 0.8125rem 0.625rem;
-    font-size: 12px;
+    padding: 1.25rem 1rem;
+    font-size: 10px;
     overflow: hidden;
     text-align: center;
   }
@@ -1807,29 +1808,35 @@ footer {
   cursor: pointer;
 }
 
-/* line 1, ../sass/_working.scss */
+/* line 1, ../sass/_player.scss */
 .video {
   background: url("../img/bg-vidos.png") center center/cover no-repeat;
   display: flex;
   align-items: center;
 }
-/* line 6, ../sass/_working.scss */
+/* line 6, ../sass/_player.scss */
 .video .container {
   align-items: center;
 }
 
-/* line 11, ../sass/_working.scss */
+/* line 11, ../sass/_player.scss */
 .player {
   position: relative;
   display: inline-block;
 }
-/* line 15, ../sass/_working.scss */
+/* line 15, ../sass/_player.scss */
 .player.hidden {
   opacity: 0;
   transition: opacity .3s;
 }
+@media screen and (max-width: 480px) {
+  /* line 11, ../sass/_player.scss */
+  .player {
+    width: 320px;
+  }
+}
 
-/* line 21, ../sass/_working.scss */
+/* line 24, ../sass/_player.scss */
 .player__splash {
   content: "";
   position: absolute;
@@ -1841,12 +1848,12 @@ footer {
   cursor: pointer;
 }
 
-/* line 33, ../sass/_working.scss */
+/* line 36, ../sass/_player.scss */
 .player__wrapper.active .player__splash {
   display: none;
 }
 
-/* line 38, ../sass/_working.scss */
+/* line 41, ../sass/_player.scss */
 .player__controls {
   position: absolute;
   bottom: 0;
@@ -1856,7 +1863,7 @@ footer {
   background: #3e3e3e;
 }
 
-/* line 47, ../sass/_working.scss */
+/* line 50, ../sass/_player.scss */
 .player__start {
   width: 0;
   height: 0;
@@ -1870,13 +1877,13 @@ footer {
   left: 20px;
   outline: none;
 }
-/* line 59, ../sass/_working.scss */
+/* line 62, ../sass/_player.scss */
 .player__start.paused {
   width: 14px;
   height: 22px;
   border: none;
 }
-/* line 63, ../sass/_working.scss */
+/* line 66, ../sass/_player.scss */
 .player__start.paused:after, .player__start.paused:before {
   content: "";
   display: block;
@@ -1886,16 +1893,16 @@ footer {
   bottom: 0;
   background: #626262;
 }
-/* line 73, ../sass/_working.scss */
+/* line 76, ../sass/_player.scss */
 .player__start.paused:after {
   right: 0;
 }
-/* line 76, ../sass/_working.scss */
+/* line 79, ../sass/_player.scss */
 .player__start.paused:before {
   left: 0;
 }
 
-/* line 82, ../sass/_working.scss */
+/* line 85, ../sass/_player.scss */
 .player__playback {
   position: absolute;
   height: 4px;
@@ -1904,8 +1911,14 @@ footer {
   top: 15px;
   left: 50px;
 }
+@media screen and (max-width: 480px) {
+  /* line 85, ../sass/_player.scss */
+  .player__playback {
+    width: 180px;
+  }
+}
 
-/* line 91, ../sass/_working.scss */
+/* line 97, ../sass/_player.scss */
 .player__playback-button {
   background: #626262;
   border-radius: 50px;
@@ -1919,13 +1932,19 @@ footer {
   left: 0;
 }
 
-/* line 104, ../sass/_working.scss */
+/* line 110, ../sass/_player.scss */
 .player__duration {
   position: absolute;
   top: 7px;
   right: 20px;
   color: #626262;
   font-weight: bold;
+}
+@media screen and (max-width: 480px) {
+  /* line 110, ../sass/_player.scss */
+  .player__duration {
+    right: 8px;
+  }
 }
 
 /* line 1, ../sass/_panel.scss */
