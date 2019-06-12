@@ -30,7 +30,7 @@
 }
 
 .types__content-img {
-    width: rem(450px);
+    // width: rem(450px);
     height: rem(300px);
     display: flex;
     justify-content: flex-start;
@@ -61,11 +61,12 @@
     font-family: 'Ubuntu';
     font-size: rem(14px);
     font-weight: 300;
-    min-width: rem(441px);
+    min-width: rem(440px);
 
     @include tablets {
         text-align: center;
         font-size: rem(13px);
+        min-width: rem(320px);
     }
 }
 

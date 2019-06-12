@@ -1245,7 +1245,6 @@ footer {
 
 /* line 32, ../sass/_types.scss */
 .types__content-img {
-  width: 28.125rem;
   height: 18.75rem;
   display: flex;
   justify-content: flex-start;
@@ -1286,17 +1285,18 @@ footer {
   font-family: 'Ubuntu';
   font-size: 0.875rem;
   font-weight: 300;
-  min-width: 27.5625rem;
+  min-width: 27.5rem;
 }
 @media screen and (max-width: 768px) {
   /* line 59, ../sass/_types.scss */
   .types__desc {
     text-align: center;
     font-size: 0.8125rem;
+    min-width: 20rem;
   }
 }
 
-/* line 72, ../sass/_types.scss */
+/* line 73, ../sass/_types.scss */
 .types__price {
   display: flex;
   color: #e35028;
@@ -1306,7 +1306,7 @@ footer {
   padding: 0.5rem 0;
 }
 
-/* line 81, ../sass/_types.scss */
+/* line 82, ../sass/_types.scss */
 .types__currency {
   display: flex;
   color: #e35028;
@@ -1316,19 +1316,19 @@ footer {
   padding: 0.5rem;
 }
 
-/* line 90, ../sass/_types.scss */
+/* line 91, ../sass/_types.scss */
 .types__footer {
   display: flex;
   align-items: baseline;
 }
 @media screen and (max-width: 768px) {
-  /* line 90, ../sass/_types.scss */
+  /* line 91, ../sass/_types.scss */
   .types__footer {
     justify-content: center;
   }
 }
 
-/* line 99, ../sass/_types.scss */
+/* line 100, ../sass/_types.scss */
 .types__cost {
   display: flex;
   align-items: baseline;
@@ -1726,23 +1726,31 @@ footer {
   .composition {
     position: absolute;
     top: 0;
-    left: 18%;
+    left: 12%;
+    min-width: 0;
+    padding: 0.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  /* line 1, ../sass/_composition-table.scss */
+  .composition {
+    left: 35%;
   }
 }
 
-/* line 20, ../sass/_composition-table.scss */
+/* line 26, ../sass/_composition-table.scss */
 .composition__item {
   display: flex;
   align-items: center;
   padding: 0.5rem;
 }
 
-/* line 26, ../sass/_composition-table.scss */
+/* line 32, ../sass/_composition-table.scss */
 .composition__icon {
   width: 2.5rem;
 }
 
-/* line 30, ../sass/_composition-table.scss */
+/* line 36, ../sass/_composition-table.scss */
 .composition__name {
   display: flex;
   flex: 1 1 auto;
