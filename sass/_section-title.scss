@@ -33,8 +33,9 @@
         }
 
         @include phones {
-            padding: rem(5px);
-            font-size: rem(22px);
+            // padding: rem(5px);
+            // font-size: rem(22px);
+            display: none;
         }
     }
 

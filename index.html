@@ -708,7 +708,7 @@
                     </p>
                 </div>
             </section>
-            <section class="section  working" id="working">
+            <!-- <section class="section  working" id="working">
                 <div class="container working__container ">
                     <h2 class="section-title section-title--color-black section-title--centered ">как мы работаем</h2>
                     <div class="working__video ">
@@ -717,38 +717,28 @@
                     </div>
 
                 </div>
-            </section>
-            <!-- <section class="section section-video">
-                        <div class="container">
-                            <h2 class="section-title section-title--color-black section-title--centered ">как мы
-                                работаем</h2>
-                            <section class="video">
-                                <div class="video__container">
-                                    <div class="video__player">
-                                        <video id="player" poster="./img/Photo7.png">
-                                            <source src="https://www.youtube.com/watch?v=usyz0nuotTA" type="video/mp4">
-                                        </video>
-                                        <img src="./img/play-white.png" alt="" class="video__player-img">
-                                    </div>
-                                    <div class="video__toolbar">
-                                        <div class="duration">
-                                            <img src="./img/duration-img.png" alt="" class="duration__img">
-                                            <div id="timer" class="duration__timer">00:01</div>
-                                            <input type="range" class="duration__length" id="durationLevel">
-                                        </div>
-                                        <div class="sound">
-                                            <img src="./img/Volum.png" class="sound__mic" id="mic" alt="">
-                                            <div class="sound__volume">
-                                                <input type="range" class="duration__length duration__length--other"
-                                                    id="micLevel" min="0" max="10">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </section>
+            </section> -->
+            <section class="section video">
+                <div class="container">
+                    <h2 class="section-title section-title--color-black section-title--centered ">как мы работаем</h2>
+                    <div class="player hidden">
+                        <div class="player__wrapper">
+                            <div id="yt-player"></div>
+                            <div class="player__splash"></div>
                         </div>
-                    </section> -->
+                        <div class="player__controls">
+                            <button class="player__start"></button>
+                            <div class="player__playback">
+                                <button class="player__playback-button"></button>
+                            </div>
+                            <div class="player__duration">
+                                <span class="player__duration-completed">0:00</span> :
+                                <span class="player__duration-estimate">0:00</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
             <section class="section order" id="order">
                 <div class="container">
                     <div class="section-title section-title--centered">Закажите доставку</div>
@@ -945,5 +935,7 @@
 <script src="./js/form.js"></script>
 <script src="./js/scroll-pages.js"></script>
 <script src="./js/mai.js"></script>
+<script src="https://www.youtube.com/iframe_api"></script>
+<script src="js/player.js"></script>
 
 </html>

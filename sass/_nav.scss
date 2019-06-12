@@ -29,13 +29,16 @@
         list-style: none;
         display: flex;
         justify-content: space-between;
-
+        @include tablets {
+            display: none;
+        }
         @media screen and (max-width: 565px) {
             flex-direction: column;
             padding: 100px 15px;
             align-items: center;
             text-align: center;
         }
+        
     }
 
     &__close {
