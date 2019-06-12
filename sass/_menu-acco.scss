@@ -114,16 +114,16 @@
         width: 30rem;
 
         @include tablets {
-            width: rem(400px);
-            padding: rem(28px) rem(24px);
+            width: rem(300px);
+            padding: rem(18px) rem(18px);
             font-size: 14px;
             overflow: hidden;
             text-align: center;
         }
 
         @include phones {
-            width: rem(190px);
-            padding: rem(36px) rem(20px);
+            width: rem(170px);
+            padding: rem(13px) rem(10px);
             font-size: 12px;
             overflow: hidden;
             text-align: center;

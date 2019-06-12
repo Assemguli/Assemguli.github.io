@@ -2,6 +2,9 @@ const sections = $('.section');
 const display = $('.maincontent');
 let inscroll = false;
 
+const md = new MobileDetect(window.navigator.userAgent);
+const isMobile = md.mobile();
+
 const switchActiveClassSideMenu = menuItemIndex => {
     $('.fixed-menu__item')
         .eq(menuItemIndex)
@@ -84,9 +87,20 @@ $('[data-scroll-to]').on('click', e => {
     performTransition(targer);
 });
 
-$(window).swipe({
-    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
-        const nextOrPrev = direction == 'up' ? 'next' : 'prev';
-        scrollToSection(nextOrPrev);
-    }
-});
+
+if (isMobile) {
+    $(window).swipe({
+        swipe: function (
+            event,
+            direction,
+            distance,
+            duration,
+            fingerCount,
+            fingerData
+        ) {
+            const nextOrPrev = direction == 'up' ? 'next' : 'prev';
+            scrollToSection(nextOrPrev);
+        }
+    });
+}
+

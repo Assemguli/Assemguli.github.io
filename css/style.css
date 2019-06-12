@@ -899,42 +899,43 @@ footer {
   color: #f9b43b;
   text-align: start;
 }
-/* line 9, ../sass/_section-title.scss */
+@media screen and (max-width: 768px) {
+  /* line 1, ../sass/_section-title.scss */
+  .section-title {
+    text-align: center;
+    font-size: 3.625rem;
+  }
+}
+/* line 13, ../sass/_section-title.scss */
 .section-title--color-black {
   color: #000;
   margin-bottom: 5.3125rem;
 }
-/* line 14, ../sass/_section-title.scss */
+/* line 18, ../sass/_section-title.scss */
 .section-title--centered {
   text-align: center;
 }
-/* line 18, ../sass/_section-title.scss */
+/* line 22, ../sass/_section-title.scss */
 .section-title--white {
   color: #fff;
 }
-/* line 22, ../sass/_section-title.scss */
+/* line 26, ../sass/_section-title.scss */
 .section-title--menu {
   padding: 5rem;
   color: #fff;
 }
 @media screen and (max-width: 768px) {
-  /* line 22, ../sass/_section-title.scss */
+  /* line 26, ../sass/_section-title.scss */
   .section-title--menu {
     padding: 0.625rem;
-    font-size: 3.125rem;
+    font-size: 3.25rem;
   }
 }
 @media screen and (max-width: 480px) {
-  /* line 22, ../sass/_section-title.scss */
+  /* line 26, ../sass/_section-title.scss */
   .section-title--menu {
     padding: 0.3125rem;
-    font-size: 1.125rem;
-  }
-}
-@media screen and (max-width: 768px) {
-  /* line 1, ../sass/_section-title.scss */
-  .section-title {
-    text-align: center;
+    font-size: 1.375rem;
   }
 }
 
@@ -1252,14 +1253,29 @@ footer {
     justify-content: center;
   }
 }
+@media screen and (max-width: 480px) {
+  /* line 32, ../sass/_types.scss */
+  .types__content-img {
+    height: 9.375rem;
+    display: flex;
+    justify-content: center;
+  }
+}
 
-/* line 45, ../sass/_types.scss */
+/* line 50, ../sass/_types.scss */
 .types__content-img-icon {
   width: 26.875rem;
   height: 17.5rem;
 }
+@media screen and (max-width: 480px) {
+  /* line 50, ../sass/_types.scss */
+  .types__content-img-icon {
+    width: 14.0625rem;
+    height: 9.375rem;
+  }
+}
 
-/* line 50, ../sass/_types.scss */
+/* line 59, ../sass/_types.scss */
 .types__desc {
   color: #ffffff;
   font-family: 'Ubuntu';
@@ -1268,14 +1284,14 @@ footer {
   min-width: 27.5625rem;
 }
 @media screen and (max-width: 768px) {
-  /* line 50, ../sass/_types.scss */
+  /* line 59, ../sass/_types.scss */
   .types__desc {
     text-align: center;
     font-size: 0.8125rem;
   }
 }
 
-/* line 63, ../sass/_types.scss */
+/* line 72, ../sass/_types.scss */
 .types__price {
   display: flex;
   color: #e35028;
@@ -1285,7 +1301,7 @@ footer {
   padding: 0.5rem 0;
 }
 
-/* line 72, ../sass/_types.scss */
+/* line 81, ../sass/_types.scss */
 .types__currency {
   display: flex;
   color: #e35028;
@@ -1295,19 +1311,19 @@ footer {
   padding: 0.5rem;
 }
 
-/* line 81, ../sass/_types.scss */
+/* line 90, ../sass/_types.scss */
 .types__footer {
   display: flex;
   align-items: baseline;
 }
 @media screen and (max-width: 768px) {
-  /* line 81, ../sass/_types.scss */
+  /* line 90, ../sass/_types.scss */
   .types__footer {
     justify-content: center;
   }
 }
 
-/* line 90, ../sass/_types.scss */
+/* line 99, ../sass/_types.scss */
 .types__cost {
   display: flex;
   align-items: baseline;
@@ -1492,8 +1508,8 @@ footer {
 @media screen and (max-width: 768px) {
   /* line 112, ../sass/_menu-acco.scss */
   .menu__body--active {
-    width: 25rem;
-    padding: 1.75rem 1.5rem;
+    width: 18.75rem;
+    padding: 1.125rem 1.125rem;
     font-size: 14px;
     overflow: hidden;
     text-align: center;
@@ -1502,8 +1518,8 @@ footer {
 @media screen and (max-width: 480px) {
   /* line 112, ../sass/_menu-acco.scss */
   .menu__body--active {
-    width: 11.875rem;
-    padding: 2.25rem 1.25rem;
+    width: 10.625rem;
+    padding: 0.8125rem 0.625rem;
     font-size: 12px;
     overflow: hidden;
     text-align: center;

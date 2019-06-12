@@ -40,11 +40,20 @@
         display: flex;
         justify-content: center;
     }
+    @include phones {
+        height: rem(150px);
+        display: flex;
+        justify-content: center;
+    }
 }
 
 .types__content-img-icon {
     width: rem(430px);
     height: rem(280px);
+    @include phones {
+        width: rem(225px);
+        height: rem(150px);
+    }
 }
 
 .types__desc {

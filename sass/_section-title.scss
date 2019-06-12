@@ -5,6 +5,10 @@
     line-height: 1;
     color: $yellow;
     text-align: start;
+    @include tablets {
+        text-align: center;
+        font-size: rem(58px);
+    }
 
     &--color-black {
         color: #000;
@@ -25,16 +29,14 @@
 
         @include tablets {
             padding: rem(10px);
-            font-size: rem(50px);
+            font-size: rem(52px);
         }
 
         @include phones {
             padding: rem(5px);
-            font-size: rem(18px);
+            font-size: rem(22px);
         }
     }
 
-    @include tablets {
-        text-align: center;
-    }
+  
 }
