@@ -3,7 +3,7 @@ const display = $('.maincontent');
 let inscroll = false;
 
 const switchActiveClassSideMenu = menuItemIndex => {
-    $('.sliders__item')
+    $('.fixed-menu__item')
     .eq(menuItemIndex)
     .addClass('active')
     .siblings()
@@ -29,7 +29,8 @@ const performTransition = sectionEq => {
         });
 
         setTimeout(() => {
-            inscroll = false
+            switchActiveClassSideMenu(sectionEq)
+            inscroll = false;
         }, 1300);
     }
 };
