@@ -1,8 +1,9 @@
 .map {
-    background: url(../img/mapbg.png) center center/cover no-repeat;
+    // background: url(../img/mapbg.png) center center/cover no-repeat;
     display: flex;
     position: relative;
     align-items: flex-end;
+    height: 100%;
 }
 
 .map__marker {

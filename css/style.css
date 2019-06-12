@@ -2293,29 +2293,29 @@ footer {
 
 /* line 1, ../sass/_map.scss */
 .map {
-  background: url(../img/mapbg.png) center center/cover no-repeat;
   display: flex;
   position: relative;
   align-items: flex-end;
+  height: 100%;
 }
 
-/* line 8, ../sass/_map.scss */
+/* line 9, ../sass/_map.scss */
 .map__marker {
   position: absolute;
   top: 19%;
   left: 48%;
 }
-/* line 13, ../sass/_map.scss */
+/* line 14, ../sass/_map.scss */
 .map__marker--second {
   top: 35%;
   left: 59%;
 }
-/* line 18, ../sass/_map.scss */
+/* line 19, ../sass/_map.scss */
 .map__marker--third {
   top: 71%;
   left: 46%;
 }
-/* line 23, ../sass/_map.scss */
+/* line 24, ../sass/_map.scss */
 .map__marker--fourth {
   top: 54%;
   left: 76%;
