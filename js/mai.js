@@ -4,10 +4,10 @@ let inscroll = false;
 
 const switchActiveClassSideMenu = menuItemIndex => {
     $('.fixed-menu__item')
-    .eq(menuItemIndex)
-    .addClass('active')
-    .siblings()
-    .removeClass('active');
+        .eq(menuItemIndex)
+        .addClass('active')
+        .siblings()
+        .removeClass('active');
 }
 
 const performTransition = sectionEq => {
@@ -62,6 +62,10 @@ $('.wrapper').on('wheel', e => {
     }
 });
 
+$('.wrapper').on('touchmove', e => {
+    e.preventDefault();
+});
+
 $(document).on('keydown', e => {
     switch (e.keyCode) {
         case 38:
@@ -78,4 +82,11 @@ $('[data-scroll-to]').on('click', e => {
     const targer = $(e.currentTarget).attr('data-scroll-to');
 
     performTransition(targer);
+});
+
+$(window).swipe({
+    swipe: function (event, direction, distance, duration, fingerCount, fingerData) {
+        const nextOrPrev = direction == 'up' ? 'next' : 'prev';
+        scrollToSection(nextOrPrev);
+    }
 });
