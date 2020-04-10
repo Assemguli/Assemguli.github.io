@@ -5,7 +5,6 @@
     display: flex;
     align-items: baseline;
     white-space: nowrap;
-
     @media screen and (max-width: 565px) {
         position: fixed;
         z-index: 10000;
@@ -17,33 +16,29 @@
         transform: translate(-100%, 0);
         transition: all 0.3s;
         justify-content: center;
-
         &__active {
             transform: translate(0, 0);
         }
     }
-
     &__list {
         padding: 0;
         margin: 0;
         list-style: none;
         display: flex;
         justify-content: space-between;
-        @include tablets {
-            display: none;
-        }
+        // @include tablets {
+        //     display: none;
+        // }
         @media screen and (max-width: 565px) {
+            display: flex;
             flex-direction: column;
             padding: 100px 15px;
             align-items: center;
             text-align: center;
         }
-        
     }
-
     &__close {
         display: none;
-
         @media screen and (max-width: 565px) {
             display: block;
             position: absolute;
@@ -54,17 +49,14 @@
             height: 50px;
         }
     }
-
     &__close-icon {
         fill: #fff;
         width: 50px;
         height: 50px;
     }
-
     &__item {
         padding: 5px 10px;
     }
-
     &__link {
         display: inline-block;
         padding: 5px;
@@ -72,15 +64,12 @@
         @include inlineblock(middle);
         font-size: rem(13px);
         text-transform: uppercase;
-        color: white;
+        color: #fff;
         text-decoration: none;
-
         &:focus,
         &:visited {
-            color: fff;
-
+            color: #fff;
         }
-
         &:hover,
         &:active {
             color: #ccc;
